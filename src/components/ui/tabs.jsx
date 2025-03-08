@@ -33,7 +33,7 @@ export const Tabs = ({
         {propTabs.map((tab, idx) => (
           <button
             key={tab.title}
-            onClick={() => {  
+            onClick={() => {
               moveSelectedTabToTop(idx);
             }}
             onMouseEnter={() => setHovering(true)}
@@ -52,7 +52,7 @@ export const Tabs = ({
                 )} />
             )}
 
-            <span className="relative block rounded-full py-2 px-16 border bg-blue-900/60 border-x-yellow-200 text-white dark:text-white">
+            <span className="relative block rounded-full py-2 px-20 border text-white dark:text-white w-full text-lg">
               {tab.title}
             </span>
           </button>
@@ -63,7 +63,7 @@ export const Tabs = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("mt-20", contentClassName)} />
+        className={cn("md:mt-20", contentClassName)} />
     </>
   );
 };
@@ -77,8 +77,12 @@ export const FadeInDiv = ({
     return tab.value === tabs[0].value;
   };
   return (
-    <div className="relative w-full h-full">
-      {tabs.map((tab, idx) => (
+    <div className={`relative w-full h-full  `}>
+      {tabs.map((tab, idx) => {
+        {/* console.log("tabs",tab  .content) */}
+
+        return (
+
         <motion.div
           key={tab.value}
           layoutId={tab.value}
@@ -92,9 +96,12 @@ export const FadeInDiv = ({
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
           className={cn("w-full h-full absolute top-0 left-0", className)}>
-          {tab.content}
+          {tab.content.length > 20 ? `${tab.content.substring(0, 20)}...` : tab.content}
+
         </motion.div>
-      ))}
+   
+        )
+      })}
     </div>
   );
 };
