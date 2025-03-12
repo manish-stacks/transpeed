@@ -12,7 +12,7 @@ export function ServicesCarouselDemo() {
   return (
     (<div className="w-full h-full py-20 bg-gradient-to-r from-[#01385e] to-[#168cbd]">
       <h2
-        className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-100 dark:text-neutral-200 font-sans text-center">
+        className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl max-[768px]:text-3xl font-bold text-neutral-100 dark:text-neutral-200 font-sans text-center">
         Get To Know Our Featured Services
       </h2>
       <Carousel items={cards} />
@@ -52,39 +52,46 @@ const DummyContent = () => {
 const data = [
   {
     title: "Air Freight Forwarding",
-    desc:"From small express shipments to large scale projects, DDU/DAP or Express, our air cargo division is well equipped with the latest technology",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    desc:"From small express shipments to large scale projects, DDU/DAP or Express, our air cargo division is well equipped with the latest technology....",
+    src: "/images/air-freight-forwarding.webp",
     content: <DummyContent />,
+    link: "abc"
   },
   {
     title: "Sea Freight",
-    desc:"Transpeed Cargo Pvt Ltd has a well-established global agency network supporting the FCL / LCL Forwarding service of Global Logistics",
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    desc:"Transpeed Cargo Pvt Ltd has a well-established global agency network supporting the FCL / LCL Forwarding service of Global Logistics....",
+    src: "/images/sea-freight-forwarding.webp",
     content: <DummyContent />,
+    link: "abc"
   },
   {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Road Transportation",
+    desc:"We offer our services to round the world destinations through our well established network of operations. Our transportation services....",
+    src: "/images/road-transportation.webp",
     content: <DummyContent />,
+    link: "abc"
   },
 
   {
-    category: "Product",
-    title: "Maps for your iPhone 15 Pro Max.",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Custom Clearance",
+    desc:"We have a well dedicated team of professionals to take care of your complete Customs clearance procedures....",
+    src: "/images/custom-clearance.webp",
     content: <DummyContent />,
+    link: "abc"
   },
   {
-    category: "iOS",
-    title: "Photography just got better.",
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Warehousing",
+    desc:"Transpeed Cargo offers secure, efficient warehousing solutions with inventory management, real-time tracking, and seamless distribution services....",
+    src: "/images/wherehousing.webp",
     content: <DummyContent />,
+    link: "abc"
   },
   {
-    category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Rail Transportation",
+    desc:"Transpeed Cargo offers efficient, reliable rail transportation, ensuring timely deliveries with cost-effective logistics solutions across India....",
+    src: "/images/rail-transportation.webp",
     content: <DummyContent />,
+    link: "abc"
   },
+ 
 ];

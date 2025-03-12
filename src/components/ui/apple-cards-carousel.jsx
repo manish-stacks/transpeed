@@ -15,9 +15,10 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import { useRouter } from "next/navigation";
 
 export const CarouselContext = createContext({
-  onCardClose: () => {},
+  onCardClose: () => { },
   currentIndex: 0,
 });
 
@@ -115,18 +116,18 @@ export const Carousel = ({
             ))}
           </div>
         </div>
-        <div className="flex justify-end gap-2 mr-10">
+        <div className="flex justify-center gap-2">
           <button
-            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+            className="relative z-40 h-10 w-10 rounded-full bg-yellow-500 flex items-center justify-center disabled:opacity-50"
             onClick={scrollLeft}
             disabled={!canScrollLeft}>
-            <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
+            <IconArrowNarrowLeft className="h-6 w-6 text-gray-100" />
           </button>
           <button
-            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+            className="relative z-40 h-10 w-10 rounded-full bg-yellow-500 flex items-center justify-center disabled:opacity-50"
             onClick={scrollRight}
             disabled={!canScrollRight}>
-            <IconArrowNarrowRight className="h-6 w-6 text-gray-500" />
+            <IconArrowNarrowRight className="h-6 w-6 text-gray-100"/>
           </button>
         </div>
       </div>
@@ -142,7 +143,7 @@ export const Card = ({
   const [open, setOpen] = useState(false);
   const containerRef = useRef(null);
   const { onCardClose, currentIndex } = useContext(CarouselContext);
-
+  const router = useRouter()
   useEffect(() => {
     function onKeyDown(event) {
       if (event.key === "Escape") {
@@ -162,8 +163,10 @@ export const Card = ({
 
   useOutsideClick(containerRef, () => handleClose());
 
-  const handleOpen = () => {
-    setOpen(true);
+  const handleOpen = (link) => {
+    //setOpen(true);
+    router.push(link)
+    return
   };
 
   const handleClose = () => {
@@ -194,18 +197,18 @@ export const Card = ({
                 onClick={handleClose}>
                 <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
               </button>
-              
+
               <motion.p
                 layoutId={layout ? `title-${card.title}` : undefined}
                 className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white">
                 {card.title}
 
-              <motion.p
-                layoutId={layout ? `category-${card.desc}` : undefined}
-                className="text-base font-medium text-black dark:text-white">
-                {card.desc}
-              </motion.p>
-              
+                <motion.p
+                  layoutId={layout ? `category-${card.desc}` : undefined}
+                  className="text-base font-medium text-black dark:text-white">
+                  {card.desc}
+                </motion.p>
+
               </motion.p>
 
               <div className="py-10">{card.content}</div>
@@ -216,7 +219,7 @@ export const Card = ({
       </AnimatePresence>
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
-        onClick={handleOpen}
+        onClick={() => handleOpen(card?.link)}
         className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10">
         <div
           className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
@@ -241,7 +244,7 @@ export const Card = ({
             className="text-white text-sm md:text-base font-medium font-sans text-left">
             {card.desc}
           </motion.p>
-   
+
 
         </div>
         <BlurImage

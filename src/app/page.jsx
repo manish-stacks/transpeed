@@ -1,10 +1,15 @@
 "use client"
-import Hero from '@/components/home/Hero';
-import { ServicesCarouselDemo } from '@/components/home/ServicesCarouselDemo';
-import { TabsDemo } from '@/components/home/TabsDemo';
 import React from 'react'
-// import ScrollyVideo from 'scrolly-video'
-// import ScrollyVideo from 'scrolly-video/dist/ScrollyVideo.cjs.jsx';
+import CounterHome from '@/components/home/CounterHome';
+import Hero from '@/components/home/Hero';
+import OtherServices from '@/components/home/OtherServices';
+import { ServicesCarouselDemo } from '@/components/home/ServicesCarouselDemo';
+
+import { WhyChooseHome } from '@/components/home/WhyChooseHome';
+import { AnimatedTestimonialsSection } from '@/components/home/AnimatedTestimonialsSection';
+import VideoOnScroll from '@/components/home/VideoOnScroll';
+import { IndustriesExperties } from '@/components/home/IndustriesExperties';
+import BlogSectionArea from '@/components/home/BlogSectionArea';
 
 
 
@@ -12,8 +17,12 @@ export default function Page() {
   return (
     <>
       <Hero />
-      <TabsDemo />
       <ServicesCarouselDemo />
+      <WhyChooseHome />
+      <OtherServices />
+      <CounterHome />
+      <AnimatedTestimonialsSection />
+      <BlogSectionArea />
     </>
   )
 }

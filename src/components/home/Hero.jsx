@@ -20,28 +20,27 @@ export default function Hero() {
     }, [isMenuOpen]);
 
     return (
-        <div className="min-h-screen relative overflow-hidden">
+        <div className="min-h-full relative overflow-hidden">
             {/* Video Background */}
             <video
                 autoPlay
                 loop
                 muted
-                className="absolute top-0 left-0 w-full h-full object-cover z-0"
-            >
+                className="absolute top-0 left-0 w-full h-[100%]  object-cover z-0">
                 <source src="images/transpeed-logistics.mp4" type="video/mp4" />
             </video>
             {/* Overlay */}
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-sky-700/50 to-cyan-400/60 z-10" />
+            <div className="absolute top-0 left-0 w-full h-[100%] bg-gradient-to-r from-sky-700/50 to-cyan-400/60 z-10" />
             {/* Content */}
             <div className="relative z-20">
               {/* Hero Section */}
-                <div className="container mx-auto px-4 pt-36 pb-32">
+                <div className="container mx-auto px-4 pt-28 pb-22">
                     <div className="max-w-3xl">
-                        <h1 className="text-5xl md:text-6xl font-bold mb-6">
+                        <h1 className="text-7xl md:text-4xl font-bold mb-6 max-[545px]:text-4xl">
                             <span className="text-white">Transportation And </span>
                             {/* <span className="text-blue-300">powered</span> */}
                             <br />
-                            <span className="text-blue-200">Logistics Service Provider</span>
+                            <span className="text-blue-200 text-7xl max-[545px]:text-4xl">Logistics Service Provider</span>
                         </h1>
                         <p className="text-xl text-white/90 mb-8">
                             Revolutionizing Supply Chain Management with Intelligent Automation and Predictive Analytics
@@ -60,7 +59,7 @@ export default function Hero() {
                 </div>
 
                 {/* Stats */}
-                <div className="container mx-auto px-4 pb-10">
+                <div className="container mx-auto mt-16 px-4 pb-16">
                     <div className="flex flex-wrap justify-between gap-8">
                         <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 flex-1">
                             <div className="text-4xl font-bold text-white mb-2">95%</div>

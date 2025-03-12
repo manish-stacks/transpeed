@@ -83,3 +83,7 @@
   }
 }
 
+
+.forscrollnone::-webkit-scrollbar {
+  display: none;
+}

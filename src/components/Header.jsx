@@ -25,7 +25,6 @@ export default function Header() {
                 <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2 w-[220px]">
                         <img src="images/transpeedogo.webp"></img>
-                        {/* <span className="text-2xl font-bold text-white">GLOBAL LOGISTICS</span> */}
                     </div>
 
                     {/* Desktop Menu */}
