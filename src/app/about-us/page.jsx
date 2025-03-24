@@ -2,7 +2,7 @@
 import React from 'react'
 import CounterHome from '@/components/home/CounterHome';
 import StrategicFoundations from '@/components/home/StrategicFoundation';
-import { Package } from 'lucide-react';
+import { Award, BarChart, Globe, Package, ThumbsUp, Users } from 'lucide-react';
 
 export default function About() {
   return (
@@ -74,7 +74,303 @@ export default function About() {
         </div>
       </section>
 
+
+      <section className="bg-gray-50 py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our History</h2>
+            <div className="h-1 w-24 bg-blue-500 mx-auto mb-8 rounded-full"></div>
+          </div>
+
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200 rounded-full"></div>
+
+            {/* Timeline items */}
+            <div className="grid grid-cols-1 gap-12">
+              <div className="relative">
+                <div className="flex items-center justify-center">
+                  <div className="bg-blue-600 text-white text-xl font-bold rounded-full w-16 h-16 flex items-center justify-center z-10 mb-8">
+                    2016
+                  </div>
+                </div>
+                <div className="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto">
+                  <h3 className="text-2xl font-bold text-blue-800 mb-4">Foundation</h3>
+                  <p className="text-gray-700">
+                    Transpeed Cargo Pvt Ltd was founded with a clear vision — to provide businesses with seamless,
+                    efficient, and cost-effective logistics solutions. Our founders, with deep industry experience,
+                    identified gaps in the market for a freight forwarder that combines reliability, transparency, and
+                    tailored service.
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="flex items-center justify-center">
+                  <div className="bg-blue-600 text-white text-xl font-bold rounded-full w-16 h-16 flex items-center justify-center z-10 mb-8">
+                    2018
+                  </div>
+                </div>
+                <div className="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto">
+                  <h3 className="text-2xl font-bold text-blue-800 mb-4">Growth & Expansion</h3>
+                  <p className="text-gray-700">
+                    Starting with a small office and a handful of clients, we quickly built a reputation for delivering
+                    shipments on time, managing complex cargo requirements, and handling critical logistics challenges
+                    with ease. Over the years, we have expanded our network, forged strong alliances with leading
+                    carriers, and established a global presence in key trade markets.
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="flex items-center justify-center">
+                  <div className="bg-blue-600 text-white text-xl font-bold rounded-full w-16 h-16 flex items-center justify-center z-10 mb-8">
+                    Today
+                  </div>
+                </div>
+                <div className="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto">
+                  <h3 className="text-2xl font-bold text-blue-800 mb-4">Industry Leader</h3>
+                  <p className="text-gray-700">
+                    From handling local shipments to coordinating complex cross-border logistics, Transpeed Cargo has
+                    grown into a name synonymous with trust and efficiency. Today, we serve clients across diverse
+                    industries, including manufacturing, automotive, retail, pharmaceuticals, and technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Achievements */}
+      <section className="container mx-auto px-4 py-16 md:py-24">
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Achievements</h2>
+          <p className="text-gray-600 text-lg">
+            At Transpeed Cargo, our track record speaks for itself. We have achieved significant milestones that reflect
+            our dedication to excellence.
+          </p>
+          <div className="h-1 w-24 bg-blue-500 mx-auto mt-8 rounded-full"></div>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+              <Globe className="w-8 h-8 text-blue-600" />
+            </div>
+            <h3 className="text-xl font-bold text-blue-900 mb-3">Global Network</h3>
+            <p className="text-gray-600">
+              We have established a presence in over 30 countries, partnering with leading global carriers and logistics
+              providers to offer seamless international freight solutions.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+              <Award className="w-8 h-8 text-blue-600" />
+            </div>
+            <h3 className="text-xl font-bold text-blue-900 mb-3">Industry Recognition</h3>
+            <p className="text-gray-600">
+              Recognized as a top-performing freight forwarder, we have consistently been awarded for operational
+              excellence, customer satisfaction, and innovative logistics solutions.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+              <Package className="w-8 h-8 text-blue-600" />
+            </div>
+            <h3 className="text-xl font-bold text-blue-900 mb-3">High-Value Projects</h3>
+            <p className="text-gray-600">
+              We have successfully handled complex shipments, including project cargo, exhibition cargo, and
+              time-critical deliveries for multinational corporations and large-scale infrastructure projects.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+              <ThumbsUp className="w-8 h-8 text-blue-600" />
+            </div>
+            <h3 className="text-xl font-bold text-blue-900 mb-3">Customer Satisfaction</h3>
+            <p className="text-gray-600">
+              Our commitment to service excellence has resulted in a 98%+ client retention rate, reflecting the trust
+              and confidence our clients place in us.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+              <BarChart className="w-8 h-8 text-blue-600" />
+            </div>
+            <h3 className="text-xl font-bold text-blue-900 mb-3">Operational Efficiency</h3>
+            <p className="text-gray-600">
+              Through strategic investments in technology and process automation, we have reduced transit times and
+              improved delivery accuracy, ensuring that shipments reach their destinations faster and more
+              cost-effectively.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+              <Users className="w-8 h-8 text-blue-600" />
+            </div>
+            <h3 className="text-xl font-bold text-blue-900 mb-3">Expert Team</h3>
+            <p className="text-gray-600">
+              Our team of industry professionals brings decades of combined experience in logistics, customs
+              regulations, and supply chain management.
+            </p>
+          </div>
+        </div>
+      </section>
       <CounterHome />
+      
+      <section className="bg-gray-50 py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our History</h2>
+            <div className="h-1 w-24 bg-blue-500 mx-auto mb-8 rounded-full"></div>
+          </div>
+
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200 rounded-full"></div>
+
+            {/* Timeline items */}
+            <div className="grid grid-cols-1 gap-12">
+              <div className="relative">
+                <div className="flex items-center justify-center">
+                  <div className="bg-blue-600 text-white text-xl font-bold rounded-full w-16 h-16 flex items-center justify-center z-10 mb-8">
+                    2016
+                  </div>
+                </div>
+                <div className="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto">
+                  <h3 className="text-2xl font-bold text-blue-800 mb-4">Foundation</h3>
+                  <p className="text-gray-700">
+                    Transpeed Cargo Pvt Ltd was founded with a clear vision — to provide businesses with seamless,
+                    efficient, and cost-effective logistics solutions. Our founders, with deep industry experience,
+                    identified gaps in the market for a freight forwarder that combines reliability, transparency, and
+                    tailored service.
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="flex items-center justify-center">
+                  <div className="bg-blue-600 text-white text-xl font-bold rounded-full w-16 h-16 flex items-center justify-center z-10 mb-8">
+                    2018
+                  </div>
+                </div>
+                <div className="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto">
+                  <h3 className="text-2xl font-bold text-blue-800 mb-4">Growth & Expansion</h3>
+                  <p className="text-gray-700">
+                    Starting with a small office and a handful of clients, we quickly built a reputation for delivering
+                    shipments on time, managing complex cargo requirements, and handling critical logistics challenges
+                    with ease. Over the years, we have expanded our network, forged strong alliances with leading
+                    carriers, and established a global presence in key trade markets.
+                  </p>
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="flex items-center justify-center">
+                  <div className="bg-blue-600 text-white text-xl font-bold rounded-full w-16 h-16 flex items-center justify-center z-10 mb-8">
+                    Today
+                  </div>
+                </div>
+                <div className="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto">
+                  <h3 className="text-2xl font-bold text-blue-800 mb-4">Industry Leader</h3>
+                  <p className="text-gray-700">
+                    From handling local shipments to coordinating complex cross-border logistics, Transpeed Cargo has
+                    grown into a name synonymous with trust and efficiency. Today, we serve clients across diverse
+                    industries, including manufacturing, automotive, retail, pharmaceuticals, and technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Achievements */}
+      <section className="container mx-auto px-4 py-16 md:py-24">
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Achievements</h2>
+          <p className="text-gray-600 text-lg">
+            At Transpeed Cargo, our track record speaks for itself. We have achieved significant milestones that reflect
+            our dedication to excellence.
+          </p>
+          <div className="h-1 w-24 bg-blue-500 mx-auto mt-8 rounded-full"></div>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+              <Globe className="w-8 h-8 text-blue-600" />
+            </div>
+            <h3 className="text-xl font-bold text-blue-900 mb-3">Global Network</h3>
+            <p className="text-gray-600">
+              We have established a presence in over 30 countries, partnering with leading global carriers and logistics
+              providers to offer seamless international freight solutions.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+              <Award className="w-8 h-8 text-blue-600" />
+            </div>
+            <h3 className="text-xl font-bold text-blue-900 mb-3">Industry Recognition</h3>
+            <p className="text-gray-600">
+              Recognized as a top-performing freight forwarder, we have consistently been awarded for operational
+              excellence, customer satisfaction, and innovative logistics solutions.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+              <Package className="w-8 h-8 text-blue-600" />
+            </div>
+            <h3 className="text-xl font-bold text-blue-900 mb-3">High-Value Projects</h3>
+            <p className="text-gray-600">
+              We have successfully handled complex shipments, including project cargo, exhibition cargo, and
+              time-critical deliveries for multinational corporations and large-scale infrastructure projects.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+              <ThumbsUp className="w-8 h-8 text-blue-600" />
+            </div>
+            <h3 className="text-xl font-bold text-blue-900 mb-3">Customer Satisfaction</h3>
+            <p className="text-gray-600">
+              Our commitment to service excellence has resulted in a 98%+ client retention rate, reflecting the trust
+              and confidence our clients place in us.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+              <BarChart className="w-8 h-8 text-blue-600" />
+            </div>
+            <h3 className="text-xl font-bold text-blue-900 mb-3">Operational Efficiency</h3>
+            <p className="text-gray-600">
+              Through strategic investments in technology and process automation, we have reduced transit times and
+              improved delivery accuracy, ensuring that shipments reach their destinations faster and more
+              cost-effectively.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+              <Users className="w-8 h-8 text-blue-600" />
+            </div>
+            <h3 className="text-xl font-bold text-blue-900 mb-3">Expert Team</h3>
+            <p className="text-gray-600">
+              Our team of industry professionals brings decades of combined experience in logistics, customs
+              regulations, and supply chain management.
+            </p>
+          </div>
+        </div>
+      </section>
       <StrategicFoundations />
 
 

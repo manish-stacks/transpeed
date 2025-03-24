@@ -38,9 +38,9 @@ export default function Header() {
                                 <Link href="/services/air-freight" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">Air Freight</Link>
                                 <Link href="/services/air-chartering" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">Air Chartering</Link>
                                 <Link href="/services/project-cargo" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">Project Cargo</Link>
-                                <Link href="/services/sea-freight" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">CFS Inbound/Outbound</Link>
-                                <Link href="/services/sea-freight" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">Custom Clearance</Link>
-                                <Link href="/services/sea-freight" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">Carnet De Passages Shipment</Link>
+                                <Link href="/services/cfs-inbound-outbond" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">CFS Inbound/Outbound</Link>
+                                <Link href="/services/custom-clearance" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">Custom Clearance</Link>
+                                <Link href="/services/carnet-de-passages-shipment" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">Carnet De Passages Shipment</Link>
                             </div>
                         </div>
                         <Link href="#" className="text-white hover:text-blue-200">Industry Solution</Link>
