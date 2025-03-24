@@ -1,6 +1,6 @@
 "use client";
 
-import { Plane, Package, Menu, X } from "lucide-react";
+import { Plane, Package} from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -27,7 +27,7 @@ export default function Hero() {
                 loop
                 muted
                 className="absolute top-0 left-0 w-full h-[100%]  object-cover z-0">
-                <source src="images/transpeed-logistics.mp4" type="video/mp4" />
+                <source src="/images/transpeed-logistics.mp4" type="video/mp4" />
             </video>
             {/* Overlay */}
             <div className="absolute top-0 left-0 w-full h-[100%] bg-gradient-to-r from-sky-700/50 to-cyan-400/60 z-10" />
@@ -46,7 +46,7 @@ export default function Hero() {
                             Revolutionizing Supply Chain Management with Intelligent Automation and Predictive Analytics
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <button className="bg-yellow-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md flex items-center space-x-2 transition-colors">
+                            <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-md flex items-center space-x-2 transition-colors">
                                 <Package className="h-5 w-5" />
                                 <span>GET A QUOTATION</span>
                             </button>

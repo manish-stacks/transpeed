@@ -9,7 +9,7 @@ export function WhyChooseHome() {
       className="h-[50rem] flex flex-col antialiased bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-sky-500 to-sky-900 dark:bg-grid-white/[0.05] items-center justify-center relative">
       <div className='title w-[40%] max-[768px]:w-[90%]'>
         <h2 className='max-w-7xl pl-4 mx-auto text-xl md:text-5xl max-[768px]:text-3xl font-bold font-sans text-center mb-10 text-white'>Why Choose Transpeed Cargo for Logistic Services?</h2>
-        <p className="text-white text-center mb-7">In today's fast-paced global economy, efficient logistics is the backbone of any successful business. At Transpeed Cargo Pvt Ltd, we understand the importance of seamless supply chain management and offer top-tier logistics solutions tailored to your needs.</p>
+        <p className="text-white text-center mb-7">In today&apos;s fast-paced global economy, efficient logistics is the backbone of any successful business. At Transpeed Cargo Pvt Ltd, we understand the importance of seamless supply chain management and offer top-tier logistics solutions tailored to your needs.</p>
       </div>
       <InfiniteMovingCards items={testimonials} direction="right" speed="slow"/>
     </div>)

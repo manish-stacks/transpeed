@@ -18,10 +18,8 @@ export function TabsDemo() {
         <div className="min-h-[600px] w-full relative rounded-2xl p-10 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-sky-500 to-sky-900 mb-20">
           <p className="text-xl md:text-4xl font-bold text-white text-center">Logistics</p>
           <div className="max-w-6xl mx-auto px-4 py-5 text-center">
-            <p
-              className={`text-[16px] whitespace-pre-wrap ${clamOns ? "line-clamp-none" : "line-clamp-2"} text-white font-normal leading-relaxed mb-6`}
-            >
-              Transpeed Cargo Pvt Ltd is India’s one of the top logistics solutions provider. Established in 2016 with the vision to provide Easy, Efficient and Economical integrated logistics solutions, Transpeed Cargo Pvt Ltd today is a reflection of its founder's passion for innovative services and belief in ethical business practices, where continuous emphasis is placed on delivering the highest standards of customer satisfaction. The founder with their experience in various import/export, sales and managerial positions focused to provide innovative, focused customer-oriented solutions to the consolidation and freight forwarding industry.
+            <p className={`text-[16px] whitespace-pre-wrap ${clamOns ? "line-clamp-none" : "line-clamp-2"} text-white font-normal leading-relaxed mb-6`}>
+              Transpeed Cargo Pvt Ltd is India&apos;s one of the top logistics solutions provider. Established in 2016 with the vision to provide Easy, Efficient and Economical integrated logistics solutions, Transpeed Cargo Pvt Ltd today is a reflection of its founder&apos; s passion for innovative services and belief in ethical business practices, where continuous emphasis is placed on delivering the highest standards of customer satisfaction. The founder with their experience in various import/export, sales and managerial positions focused to provide innovative, focused customer-oriented solutions to the consolidation and freight forwarding industry.
             </p>
             <div className="md:hidden">
               <button onClick={handleClamp} className="text-black">

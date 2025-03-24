@@ -1,54 +1,53 @@
+"use client";
 import React from 'react'
+import CounterHome from '@/components/home/CounterHome';
+import StrategicFoundations from '@/components/home/StrategicFoundation';
+import { Package } from 'lucide-react';
 
 export default function About() {
   return (
     <>
       <section className="w-full
-            relative  overflow-hidden block z-10 bg-[url('https://plus.unsplash.com/premium_photo-1677535536177-5dba2164002d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]  bg-cover bg-no-repeat bg-fixed
-            bg-center  before:content-[''] before:absolute before:inset-0 before:block before:bg-gradient-to-r
-            before:from-cyan-700
-            before:to-sky-700
+            relative  overflow-hidden block z-10 bg-[url('/images/about-us-hero-bg.webp')]  bg-cover bg-no-repeat bg-fixed
+            bg-center  before:content-[''] before:absolute before:inset-0 before:block 
             before:opacity-75
             before:z-[-5]">
-        <div className=" text-white py-20">
-          <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
-            <div className="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
-              <h1 className="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose">
-                Transpeed Cargo
-              </h1>
-              <h2 className="text-7xl md:text-5xl leading-relaxed md:leading-snug mb-2 font-extrabold">
-                We Are Global
-              </h2>
-              <p className="text-sm md:text-base text-gray-50 mb-4">
-                Explore your favourite events and register now to showcase your talent
-                and win exciting prizes.
-              </p>
-              <a
-                href="#"
-                className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
-              >
-                Explore Now
-              </a>
+        <div className=" text-white py-10">
+          <div className="container mx-auto flex flex-col md:flex-row items-center justify-center my-10 md:my-24 relative">
+            <div className="space-y-5 flex flex-col w-full lg:w-2/3 items-center md:items-start p-8 ">
+              <div>
+                <h1 className="text-3xl md:text-5xl text-yellow-500 tracking-loose">
+                  Transpeed Cargo
+                </h1>
+              </div>
+              <div>
+                <h2 className="md:text-6xl text-5xl mb-2 font-extrabold">
+                  We Are Global
+                </h2>
+              </div>
+              <div>
+                <p className="text-2xl md:tex-3xl text-center md:text-start text-gray-50">
+                  We are focus on international sea freight and airfreight business and integrating trucking, Customs clearance and warehousing into a large-sized modern logistics enterprise.
+                </p>
+              </div>
+              <div className='pt-10'>
+                {/* <a href="#" className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black text-lg rounded shadow hover:shadow-lg py-3 px-8 border border-yellow-300 hover:border-transparent" >
+                  Explore Now
+                </a> */}
+                <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-md flex items-center space-x-2 transition-colors">
+                  <Package className="h-5 w-5" />
+                  <span>GET A QUOTATION</span>
+               </button>
+              </div>
+              
             </div>
-            <div className="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
-              <div className="h-48 flex flex-wrap content-center">
+
+            <div className="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3">
+              <div className="">
                 <div>
                   <img
-                    className="inline-block mt-28 xl:block"
-                    src="https://user-images.githubusercontent.com/54521023/116969935-c13d5b00-acd4-11eb-82b1-5ad2ff10fb76.png"
-                  />
-                </div>
-                <div>
-                  <img
-                    className="inline-block mt-24 md:mt-0 p-8 md:p-0"
-                    src="https://user-images.githubusercontent.com/54521023/116969931-bedb0100-acd4-11eb-99a9-ff5e0ee9f31f.png"
-                  />
-                </div>
-                
-                <div>
-                  <img
-                    className="inline-block mt-28 lg:block"
-                    src="https://user-images.githubusercontent.com/54521023/116969939-c1d5f180-acd4-11eb-8ad4-9ab9143bdb50.png"
+                    className="mb-10"
+                    src="/images/transpeed-about-us-hero.webp"
                   />
                 </div>
               </div>
@@ -56,6 +55,28 @@ export default function About() {
           </div>
         </div>
       </section>
+      {/* about us section */}
+      <section className="mt-20 mb-20">
+        <div className="w-full max-auto xl:px-52 lg:px-10 md:px-10 px-5 grid grid-cols-1 md:grid-cols-2 items-center">
+          <div className="pr-0 md:pr-5">
+            <div class="title">
+              <h2 class="max-w-7xl mx-auto text-3xl md:text-5xl font-bold font-sans mb-10 text-center md:text-start">About Transpeed Cargo</h2>
+              <p className="text-justify">Transpeed Cargo Pvt Ltd is India’s one of the top logistics solutions provider. Established in 2016 with the vision to provide Easy, Efficient and Economical integrated logistics solutions, Transpeed Cargo Pvt Ltd today is a reflection of it’s founder's passion for innovative services and belief in ethical business practices, where continuous emphasis is placed on delivering the highest standards of customer satisfaction. The founder with their experience in various import/export, sales and managerial positions focused to provide innovative, focused customer oriented solutions to the consolidation and freight forwarding industry.</p>
+              <p className='text-justify'>Transpeed Cargo Pvt Ltd has a menu of supply chain solutions that can optimize the effectiveness of your product promotion, and reduce the cost of your packaging and distribution as well as your carbon footprint. “Sales Lift” is music to any marketing, brand or merchandising manager’s ears. Transpeed Cargo Pvt Ltd understands the impact packaging has when your customers are competing for market dollars.</p>
+              <p className='text-justify'>Transpeed Cargo Pvt Ltd is taking optimization to a whole new level. It has evolved into a comprehensive, fully integrated program designed to maximize productivity, minimize waste, and above all your product promotion, and reduce the cost of your packaging and distribution as well as your carbon footprint.</p>
+            </div>
+          </div>
+          <div className="">
+            <div>
+              <img src='/images/about-transpeed.webp'></img>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CounterHome />
+      <StrategicFoundations />
+
 
 
     </>

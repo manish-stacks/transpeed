@@ -6,10 +6,10 @@ export default function Footer() {
     <footer className="bg-[url('/images/footer-bg.webp')] bg-cover bg-center text-gray-900 pt-20 pb-10 px-6 md:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Left Column - Branding & Contact */}
-        <div className='rounded-2xl p-8 '>
+        <div className='rounded-2xl'>
           <div className="flex items-center">
             <div className="text-white">
-            <img src="images/transpeedogo.webp" className='w-[180px]'></img>
+            <img src="/images/transpeedogo.webp" className='w-[180px]'></img>
             </div>  
           </div>
           <h2 className="text-lg text-yellow-500 font-bold mt-4">Transpeed Cargo Pvt. Ltd.</h2>
@@ -28,7 +28,7 @@ export default function Footer() {
         </div>
 
         {/* Portfolio Section */}
-        <div className='rounded-2xl p-8'>
+        <div className='rounded-2xl'>
           <h3 className="font-bold text-yellow-400 text-2xl">Useful Link</h3>
           <ul className="text-md mt-2 space-y-1 text-white">
             <li>Home</li>
@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
 
         {/* Finance Section */}
-        <div className='rounded-2xl p-8'>
+        <div className='rounded-2xl'>
           <h3 className="font-bold text-yellow-400 text-2xl">Logistics Services</h3>
           <ul className="text-md mt-2 space-y-1 text-white">
             <li>Air Freight</li>
@@ -55,7 +55,7 @@ export default function Footer() {
         </div>
 
         {/* Operations Section */}
-        <div className='rounded-2xl p-8'>
+        <div className='rounded-2xl'>
           <h3 className="font-bold text-yellow-400 text-2xl">Support</h3>
           <ul className="text-md mt-2 space-y-1 text-white">
             <li>Privacy Policy</li>
