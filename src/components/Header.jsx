@@ -33,7 +33,7 @@ export default function Header() {
                                 <span>Services</span>
                                 <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
                             </button>
-                            <div className="absolute mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden z-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div className="absolute mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden z-50 hidden group-hover:block transition-opacity duration-300">
                                 <Link href="/services/ocean-freight" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">Ocean Freight</Link>
                                 <Link href="/services/air-freight" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">Air Freight</Link>
                                 <Link href="/services/air-chartering" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">Air Chartering</Link>
@@ -45,7 +45,21 @@ export default function Header() {
                         </div>
                         <Link href="#" className="text-white hover:text-blue-200">Industry Solution</Link>
                         <Link href="#" className="text-white hover:text-blue-200">News & Insight</Link>
-                        <Link href="#" className="text-white hover:text-blue-200">Utility</Link>
+
+                        <div className="relative group">
+                            <button className="text-white hover:text-blue-200 flex items-center space-x-1">
+                                <span>Utility</span>
+                                <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
+                            </button>
+                            <div className="absolute mt-2 w-64 bg-white shadow-lg rounded-md overflow-hidden z-50 hidden group-hover:block transition-opacity duration-300">
+                                <Link href="/utility/inco-terms" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">Inco Terms</Link>
+                                <Link href="/utility/container-specification" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">Container Specification</Link>
+                                <Link href="/utility/aircarft-specification" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] capitalize hover:text-slate-100">Aircarft Specification</Link>
+                                <Link href="/utility/world-seaport" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">World Seaport</Link>
+                                <Link href="/utility/world-airport" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">World Airport</Link>
+                             
+                            </div>
+                        </div>
                         <Link href="#" className="text-white hover:text-blue-200">Pay Online</Link>
                         <Link href="/contact-us" className="text-white hover:text-blue-200">Contact Us</Link>
                     </div>
