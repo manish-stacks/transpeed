@@ -43,7 +43,7 @@ export default function Header() {
                                 <Link href="/services/carnet-de-passages-shipment" className="block px-4 py-2 text-slate-900 hover:bg-[#172554] hover:text-slate-100">Carnet De Passages Shipment</Link>
                             </div>
                         </div>
-                        <Link href="#" className="text-white hover:text-blue-200">Industry Solution</Link>
+                        <Link href="/industry-solution" className="text-white hover:text-blue-200">Industry Solution</Link>
                         <Link href="#" className="text-white hover:text-blue-200">News & Insight</Link>
 
                         <div className="relative group">
