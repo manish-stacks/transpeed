@@ -4,7 +4,7 @@ import WhyChoose from "./WhyChoose"
 
 export default function CarnetDePassages() {
     return (
-        <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
+        <div className="min-h-screen bg-[#D3EDFF] mt-20">
 
 
             {/* Key Benefits Section */}
@@ -14,7 +14,7 @@ export default function CarnetDePassages() {
                         <h2 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                             Key Benefits of <span className="text-[#2F9DDE] underline"><i>Carnet de Passages</i></span> Shipment
                         </h2>
-                        <p className="text-lg text-gray-600">
+                        <p className="text-lg text-gray-900">
                             Experience hassle-free temporary vehicle imports with our comprehensive services
                         </p>
                     </div>
@@ -25,12 +25,12 @@ export default function CarnetDePassages() {
                                 key={index}
                                 className="group relative overflow-hidden rounded-xl bg-white p-6 shadow-lg transition-all hover:shadow-xl"
                             >
-                                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 text-blue-600">
+                                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-yellow-100 text-yellow-500">
                                     {benefit.icon}
                                 </div>
-                                <h3 className="mb-3 text-xl font-bold text-gray-900">{benefit.title}</h3>
-                                <p className="text-gray-600">{benefit.description}</p>
-                                <div className="absolute bottom-0 left-0 h-1 w-0 bg-blue-600 transition-all duration-300 group-hover:w-full"></div>
+                                <h3 className="mb-3 text-xl font-bold text-slate-900">{benefit.title}</h3>
+                                <p className="text-gray-900">{benefit.description}</p>
+                                <div className="absolute bottom-0 left-0 h-1 w-0 bg-yellow-500 transition-all duration-300 group-hover:w-full"></div>
                             </div>
                         ))}
                     </div>
@@ -44,7 +44,7 @@ export default function CarnetDePassages() {
                         <h2 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                             Transpeed <i>Cargo's Expertise</i> in Carnet de Passages <span className="text-[#2C95D4]">Shipments</span>
                         </h2>
-                        <p className="text-lg text-gray-600">
+                        <p className="text-lg text-gray-900">
                             We specialize in handling Carnet de Passages shipments for a wide range of industries and purposes
                         </p>
                     </div>
@@ -64,7 +64,7 @@ export default function CarnetDePassages() {
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                                     <div className="absolute bottom-0 left-0 p-6">
-                                        <div className="mb-2 inline-flex items-center rounded-full bg-yellow-500 px-3 py-1 text-sm font-medium text-blue-900">
+                                        <div className="mb-2 inline-flex items-center rounded-full bg-yellow-500 px-3 py-1 text-sm font-medium text-slate-900">
                                             {area.emoji}
                                             <span className="ml-2">{area.title}</span>
                                         </div>
@@ -74,12 +74,12 @@ export default function CarnetDePassages() {
                                     <ul className="mb-4 space-y-3">
                                         {area.points.map((point, idx) => (
                                             <li key={idx} className="flex items-start">
-                                                <span className="mr-2 mt-1 text-blue-600">●</span>
+                                                <span className="mr-2 mt-1 text-yellow-500">●</span>
                                                 <span>{point}</span>
                                             </li>
                                         ))}
                                     </ul>
-                                    <button className="inline-flex items-center text-blue-600 hover:text-blue-800">
+                                    <button className="inline-flex items-center text-yellow-500 hover:text-yellow-600">
                                         <span className="font-medium">Learn more</span>
                                         <ArrowRightIcon className="ml-2 h-4 w-4" />
                                     </button>
@@ -91,7 +91,7 @@ export default function CarnetDePassages() {
             </section>
 
             {/* CTA Section */}
-            <section className="bg-blue-900 py-20 mb-14 text-white">
+            <section className="bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-sky-500 to-sky-900 py-20 text-white">
                 <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="mx-auto max-w-3xl text-center">
                         <h2 className="mb-6 text-3xl font-bold sm:text-4xl">Seamless Vehicle Shipment Starts Here</h2>
@@ -101,7 +101,7 @@ export default function CarnetDePassages() {
                             simplify your international vehicle movement
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
-                            <button className="rounded-lg bg-yellow-500 px-8 py-3 font-semibold text-blue-900 transition-all hover:bg-yellow-400">
+                            <button className="rounded-lg bg-yellow-500 px-8 py-3 font-semibold text-gray-900 transition-all hover:bg-yellow-400">
                                 Request a Quote
                             </button>
                             <button className="rounded-lg border border-white/30 bg-white/10 px-8 py-3 font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20">

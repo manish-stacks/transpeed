@@ -51,16 +51,44 @@ const DummyContent = () => {
 
 const data = [
   {
-    title: "Air Freight Forwarding",
+    title: "Ocean Freight",
+    desc:"Transpeed Cargo Pvt Ltd has a well-established global agency network supporting the FCL / LCL Forwarding service of Global Logistics....",
+    src: "/images/sea-freight-forwarding.webp",
+    content: <DummyContent />,
+    link: "abc"
+  },
+  {
+    title: "Air Freight",
     desc:"From small express shipments to large scale projects, DDU/DAP or Express, our air cargo division is well equipped with the latest technology....",
     src: "/images/air-freight-forwarding.webp",
     content: <DummyContent />,
     link: "abc"
   },
   {
-    title: "Sea Freight",
-    desc:"Transpeed Cargo Pvt Ltd has a well-established global agency network supporting the FCL / LCL Forwarding service of Global Logistics....",
-    src: "/images/sea-freight-forwarding.webp",
+    title: "Air Chartering",
+    desc:"Transpeed Cargo Pvt. Ltd. offers exceptional Air Chartering Solutions tailored to meet urgent and specialized cargo needs.... ",
+    src: "/images/air-chartering.webp",
+    content: <DummyContent />,
+    link: "abc"
+  },
+  {
+    title: "Project Cargo",
+    desc:"At Transpeed Cargo Private Limited, we specialize in delivering tailored Project Cargo solutions to handle complex, oversized, and heavy-lift....",
+    src: "/images/project-cargo.webp",
+    content: <DummyContent />,
+    link: "abc"
+  },
+   {
+    title: "CFS Inbound/Outbound Solutions",
+    desc:"Transpeed Cargo Pvt. Ltd. ensures seamless CFS solutions for efficient cargo handling, storage, and transport, optimizing your supply chain....",
+    src: "/images/cfs-inbond-outbond.webp",
+    content: <DummyContent />,
+    link: "abc"
+  },
+  {
+    title: "Custom Clearance",
+    desc:"We have a well dedicated team of professionals to take care of your complete Customs clearance procedures....",
+    src: "/images/custom-clearance.webp",
     content: <DummyContent />,
     link: "abc"
   },
@@ -72,13 +100,6 @@ const data = [
     link: "abc"
   },
 
-  {
-    title: "Custom Clearance",
-    desc:"We have a well dedicated team of professionals to take care of your complete Customs clearance procedures....",
-    src: "/images/custom-clearance.webp",
-    content: <DummyContent />,
-    link: "abc"
-  },
   {
     title: "Warehousing",
     desc:"Transpeed Cargo offers secure, efficient warehousing solutions with inventory management, real-time tracking, and seamless distribution services....",

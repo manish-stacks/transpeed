@@ -24,7 +24,7 @@ function UseCaseCard({ icon: Icon, title, description }) {
       className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
     >
       <div className="flex items-center mb-4">
-        <Icon className="w-8 h-8 text-blue-600 mr-3" />
+        <Icon className="w-8 h-8 text-yellow-500 mr-3" />
         <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
       </div>
       <p className="text-gray-600">{description}</p>
@@ -149,19 +149,19 @@ function UseCases() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex items-center space-x-4">
-                <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0" />
+                <CheckCircle2 className="w-6 h-6 text-yellow-500 flex-shrink-0" />
                 <span class="text-gray-50">Comprehensive feasibility studies</span>
               </div>
               <div className="flex items-center space-x-4">
-                <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0" />
+                <CheckCircle2 className="w-6 h-6 text-yellow-500 flex-shrink-0" />
                 <span class="text-gray-50">Strategic route planning</span>
               </div>
               <div className="flex items-center space-x-4">
-                <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0" />
+                <CheckCircle2 className="w-6 h-6 text-yellow-500 flex-shrink-0" />
                 <span class="text-gray-50">Permit acquisition</span>
               </div>
               <div className="flex items-center space-x-4">
-                <CheckCircle2 className="w-6 h-6 text-green-400 flex-shrink-0" />
+                <CheckCircle2 className="w-6 h-6 text-yellow-500 flex-shrink-0" />
                 <span class="text-gray-50">Specialized equipment arrangement</span>
               </div>
             </div>
@@ -184,7 +184,7 @@ function UseCases() {
           <p className="text-xl text-gray-600 mb-8">
             Experience reliable and cost-effective Project Cargo solutions tailored to your needs
           </p>
-          <Link href={'/contact-us'} className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
+          <Link href={'/contact-us'} className="bg-yellow-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
             Contact Us Today
           </Link>
         </div>

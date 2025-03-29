@@ -28,11 +28,11 @@ const Footer = () => {
   const footerLinks = [
     {
       title: "Useful Links",
-      links: ["Home", "About Us", "Services", "Global Privilege", "Contact Us", "Gallery", "Career"],
+      links: ["Home", "About Us", "Industries", "News", "Contact Us"],
     },
     {
       title: "Logistics Services",
-      links: ["Air Freight", "SEA Freight", "Road Transportation", "Warehousing", "Custom Clearance", "Rail Transport"],
+      links: ["Ocean Freight", "Air Freight", "Air Chartering", "Project Cargo", "CFS Inbound/Outbound", "Custom Clearance","Carnet De Passages Shipment"],
     },
     {
       title: "Support",

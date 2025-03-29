@@ -15,14 +15,16 @@ export default function AirHero() {
                     <p className="mt-4 text-lg">
                         Transpeed Cargo offers reliable and efficient air freight services to ensure fast and secure transportation of goods across the globe. With a strong network of airline partners and advanced logistics solutions, we provide seamless delivery tailored to meet your business needs.
                     </p>
-                    <button className="bg-yellow-500 hover:bg-yellow-600 text-white mt-5 px-6 py-3 rounded-md flex items-center space-x-2 transition-colors">
-                        <Package className="h-5 w-5" />
-                        <span>GET A QUOTATION</span>
-                    </button>
+                    <div className='flex justify-center md:justify-start'>
+                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white mt-5 px-6 py-3 rounded-md flex items-center space-x-2 transition-colors">
+                            <Package className="h-5 w-5" />
+                            <span>GET A QUOTATION</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div>
-              
+
             </div>
 
         </div>

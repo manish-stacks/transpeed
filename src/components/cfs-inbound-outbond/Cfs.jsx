@@ -23,7 +23,7 @@ function SolutionSection({ title, description, items, isLeft }) {
           <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-[#15557D] to-[#2B92D0] bg-clip-text text-transparent">
             {title}
           </h2>
-          <p className="text-gray-600 mb-8">{description}</p>
+          <p className="text-gray-800 mb-8">{description}</p>
           
           <div className="space-y-4">
             {items.map((item, index) => (
@@ -31,10 +31,10 @@ function SolutionSection({ title, description, items, isLeft }) {
                 key={index}
                 className="flex items-start p-4 rounded-xl bg-gradient-to-r from-gray-50 to-gray-100 hover:from-blue-50 hover:to-purple-50 transition-colors"
               >
-                <PackageCheck className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                <PackageCheck className="w-9 h-9 text-yellow-500 flex-shrink-0 mt-1" />
                 <div className="ml-4">
-                  <h3 className="font-semibold text-gray-800">{item.title}</h3>
-                  <p className="text-gray-600 text-sm mt-1">{item.description}</p>
+                  <h3 className="font-bold text-lg text-[#172554]">{item.title}</h3>
+                  <p className="text-gray-800 mt-1">{item.description}</p>
                 </div>
               </div>
             ))}
@@ -98,7 +98,7 @@ function Cfs() {
               Streamlined CFS Solutions
             </h1>
             <p className="text-xl text-center text-blue-100">
-              Experience seamless cargo handling with our comprehensive Container Freight Station services, 
+              Experience seamless cargo handling with our comprehensive Container Freight Station services,<br/> 
               designed to optimize your supply chain from start to finish.
             </p>
           </div>

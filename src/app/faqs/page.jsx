@@ -117,7 +117,7 @@ function FAQPage() {
                                 </h1>
                             </div>
                             <p className="text-blue-100 max-w-2xl text-lg">
-                                Find answers to common questions about Transpeed Cargo's services, shipping processes, and more.
+                                Find answers to common questions about Transpeed Cargo&apos;s services, shipping processes, and more.
                             </p>
 
                             {/* Search bar positioned at the bottom of the hero section */}

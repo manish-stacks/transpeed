@@ -16,7 +16,7 @@ export default function CustomizedAirChartering() {
             </div>
             <div>
               <div className="relative rounded-3xl overflow-hidden">
-                <img src="/images/sea-frieght.webp" alt="Blog Thumbnail" className="w-full h-auto rounded-xl" />
+                <img src="/images/about-air-chartering.webp" alt="Blog Thumbnail" className="w-full h-auto rounded-xl" />
                 <div className="absolute bottom-3 left-3 bg-gray-100 p-6 rounded-xl shadow-lg w-2/4">
                   <span className="text-sm bg-yellow-500 text-gray-900 px-3 py-1 rounded-md">Air Chartering</span>
                   <h3 className="text-lg font-semibold mt-2">

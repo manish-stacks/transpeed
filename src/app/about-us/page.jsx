@@ -61,8 +61,8 @@ export default function About() {
           <div className="pr-0 md:pr-5">
             <div class="title">
               <h2 class="max-w-7xl mx-auto text-3xl md:text-5xl font-bold font-sans mb-10 text-center md:text-start">About Transpeed Cargo</h2>
-              <p className="text-justify">Transpeed Cargo Pvt Ltd is India’s one of the top logistics solutions provider. Established in 2016 with the vision to provide Easy, Efficient and Economical integrated logistics solutions, Transpeed Cargo Pvt Ltd today is a reflection of it’s founder's passion for innovative services and belief in ethical business practices, where continuous emphasis is placed on delivering the highest standards of customer satisfaction. The founder with their experience in various import/export, sales and managerial positions focused to provide innovative, focused customer oriented solutions to the consolidation and freight forwarding industry.</p>
-              <p className='text-justify'>Transpeed Cargo Pvt Ltd has a menu of supply chain solutions that can optimize the effectiveness of your product promotion, and reduce the cost of your packaging and distribution as well as your carbon footprint. “Sales Lift” is music to any marketing, brand or merchandising manager’s ears. Transpeed Cargo Pvt Ltd understands the impact packaging has when your customers are competing for market dollars.</p>
+              <p className="text-justify">Transpeed Cargo Pvt Ltd is India &lsquo; s one of the top logistics solutions provider. Established in 2016 with the vision to provide Easy, Efficient and Economical integrated logistics solutions, Transpeed Cargo Pvt Ltd today is a reflection of it&lsquo;s founder&lsquo;s passion for innovative services and belief in ethical business practices, where continuous emphasis is placed on delivering the highest standards of customer satisfaction. The founder with their experience in various import/export, sales and managerial positions focused to provide innovative, focused customer oriented solutions to the consolidation and freight forwarding industry.</p>
+              <p className='text-justify'>Transpeed Cargo Pvt Ltd has a menu of supply chain solutions that can optimize the effectiveness of your product promotion, and reduce the cost of your packaging and distribution as well as your carbon footprint. “Sales Lift” is music to any marketing, brand or merchandising manager&lsquo;s ears. Transpeed Cargo Pvt Ltd understands the impact packaging has when your customers are competing for market dollars.</p>
               <p className='text-justify'>Transpeed Cargo Pvt Ltd is taking optimization to a whole new level. It has evolved into a comprehensive, fully integrated program designed to maximize productivity, minimize waste, and above all your product promotion, and reduce the cost of your packaging and distribution as well as your carbon footprint.</p>
             </div>
           </div>
@@ -90,13 +90,13 @@ export default function About() {
             <div className="grid grid-cols-1 gap-12">
               <div className="relative">
                 <div className="flex items-center justify-center">
-                  <div className="bg-blue-600 text-white text-xl font-bold rounded-full w-16 h-16 flex items-center justify-center z-10 mb-8">
+                  <div className="bg-yellow-500 text-white text-xl font-bold rounded-full w-16 h-16 flex items-center justify-center z-10 mb-8">
                     2016
                   </div>
                 </div>
                 <div className="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto">
-                  <h3 className="text-2xl font-bold text-blue-800 mb-4">Foundation</h3>
-                  <p className="text-gray-700">
+                  <h3 className="text-2xl font-bold text-blue-900 mb-4">Foundation</h3>
+                  <p className="text-slate-900">
                     Transpeed Cargo Pvt Ltd was founded with a clear vision — to provide businesses with seamless,
                     efficient, and cost-effective logistics solutions. Our founders, with deep industry experience,
                     identified gaps in the market for a freight forwarder that combines reliability, transparency, and
@@ -107,13 +107,13 @@ export default function About() {
 
               <div className="relative">
                 <div className="flex items-center justify-center">
-                  <div className="bg-blue-600 text-white text-xl font-bold rounded-full w-16 h-16 flex items-center justify-center z-10 mb-8">
+                  <div className="bg-yellow-500 text-white text-xl font-bold rounded-full w-16 h-16 flex items-center justify-center z-10 mb-8">
                     2018
                   </div>
                 </div>
                 <div className="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto">
-                  <h3 className="text-2xl font-bold text-blue-800 mb-4">Growth & Expansion</h3>
-                  <p className="text-gray-700">
+                  <h3 className="text-2xl font-bold text-blue-900 mb-4">Growth & Expansion</h3>
+                  <p className="text-slate-900">
                     Starting with a small office and a handful of clients, we quickly built a reputation for delivering
                     shipments on time, managing complex cargo requirements, and handling critical logistics challenges
                     with ease. Over the years, we have expanded our network, forged strong alliances with leading
@@ -124,13 +124,13 @@ export default function About() {
 
               <div className="relative">
                 <div className="flex items-center justify-center">
-                  <div className="bg-blue-600 text-white text-xl font-bold rounded-full w-16 h-16 flex items-center justify-center z-10 mb-8">
+                  <div className="bg-yellow-500 text-white text-xl font-bold rounded-full w-16 h-16 flex items-center justify-center z-10 mb-8">
                     Today
                   </div>
                 </div>
                 <div className="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto">
-                  <h3 className="text-2xl font-bold text-blue-800 mb-4">Industry Leader</h3>
-                  <p className="text-gray-700">
+                  <h3 className="text-2xl font-bold text-blue-900 mb-4">Industry Leader</h3>
+                  <p className="text-slate-900">
                     From handling local shipments to coordinating complex cross-border logistics, Transpeed Cargo has
                     grown into a name synonymous with trust and efficiency. Today, we serve clients across diverse
                     industries, including manufacturing, automotive, retail, pharmaceuticals, and technology.
@@ -150,13 +150,13 @@ export default function About() {
             At Transpeed Cargo, our track record speaks for itself. We have achieved significant milestones that reflect
             our dedication to excellence.
           </p>
-          <div className="h-1 w-24 bg-blue-500 mx-auto mt-8 rounded-full"></div>
+          <div className="h-1 w-24 bg-yellow-500 mx-auto mt-8 rounded-full"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-yellow-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
             <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-              <Globe className="w-8 h-8 text-blue-600" />
+              <Globe className="w-8 h-8 text-yellow-500" />
             </div>
             <h3 className="text-xl font-bold text-blue-900 mb-3">Global Network</h3>
             <p className="text-gray-600">
@@ -165,9 +165,9 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-yellow-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
             <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-              <Award className="w-8 h-8 text-blue-600" />
+              <Award className="w-8 h-8 text-yellow-500" />
             </div>
             <h3 className="text-xl font-bold text-blue-900 mb-3">Industry Recognition</h3>
             <p className="text-gray-600">
@@ -176,9 +176,9 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-yellow-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
             <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-              <Package className="w-8 h-8 text-blue-600" />
+              <Package className="w-8 h-8 text-yellow-500" />
             </div>
             <h3 className="text-xl font-bold text-blue-900 mb-3">High-Value Projects</h3>
             <p className="text-gray-600">
@@ -187,9 +187,9 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-yellow-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
             <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-              <ThumbsUp className="w-8 h-8 text-blue-600" />
+              <ThumbsUp className="w-8 h-8 text-yellow-500" />
             </div>
             <h3 className="text-xl font-bold text-blue-900 mb-3">Customer Satisfaction</h3>
             <p className="text-gray-600">
@@ -198,9 +198,9 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-yellow-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
             <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-              <BarChart className="w-8 h-8 text-blue-600" />
+              <BarChart className="w-8 h-8 text-yellow-500" />
             </div>
             <h3 className="text-xl font-bold text-blue-900 mb-3">Operational Efficiency</h3>
             <p className="text-gray-600">
@@ -210,9 +210,9 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-blue-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
+          <div className="bg-white rounded-xl p-8 shadow-lg border-t-4 border-yellow-500 hover:transform hover:-translate-y-2 transition-transform duration-300">
             <div className="bg-blue-50 p-3 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-              <Users className="w-8 h-8 text-blue-600" />
+              <Users className="w-8 h-8 text-yellow-500" />
             </div>
             <h3 className="text-xl font-bold text-blue-900 mb-3">Expert Team</h3>
             <p className="text-gray-600">
@@ -224,7 +224,7 @@ export default function About() {
       </section>
       <CounterHome />
       
-      <section className="bg-gray-50 py-16 md:py-24">
+      {/* <section className="bg-gray-50 py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our History</h2>
@@ -232,14 +232,14 @@ export default function About() {
           </div>
 
           <div className="relative">
-            {/* Timeline line */}
+          
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200 rounded-full"></div>
 
-            {/* Timeline items */}
+           
             <div className="grid grid-cols-1 gap-12">
               <div className="relative">
                 <div className="flex items-center justify-center">
-                  <div className="bg-blue-600 text-white text-xl font-bold rounded-full w-16 h-16 flex items-center justify-center z-10 mb-8">
+                  <div className="bg-yellow-500 text-white text-xl font-bold rounded-full w-16 h-16 flex items-center justify-center z-10 mb-8">
                     2016
                   </div>
                 </div>
@@ -289,10 +289,10 @@ export default function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Achievements */}
-      <section className="container mx-auto px-4 py-16 md:py-24">
+      {/* <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Achievements</h2>
           <p className="text-gray-600 text-lg">
@@ -370,7 +370,7 @@ export default function About() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
       <StrategicFoundations />
 
 

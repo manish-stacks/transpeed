@@ -7,9 +7,9 @@ const page = () => {
     return (
         <div>
 
-            <div className="relative h-[600px] flex items-center justify-center bg-cover bg-center " style={{ backgroundImage: "url('/images/ship.jpg')" }}>
+            <div className="relative h-[600px] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/images/global-vehical-movment-hero.webp')" }}>
 
-                <div className="absolute inset-0 bg-gradient-to-r from-sky-900/80 to-sky-500/10"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-sky-900 to-sky-500/10"></div>
 
                 {/* Hero Content */}
                 <div className="grid grid-cols-1 md:grid-cols-2 px-7 md:px-40">
@@ -20,22 +20,24 @@ const page = () => {
                         <p className="mt-4 text-lg">
                             Transpeed Cargo Pvt. Ltd. streamlines international vehicle shipments with expert **Carnet de Passages (CPD)** services, ensuring smooth, compliant transit for trade shows, rallies, and business needs.
                         </p>
-                        <button className="bg-yellow-500 hover:bg-yellow-600 text-white mt-5 px-6 py-3 rounded-md flex items-center space-x-2 transition-colors">
-                            <Package className="h-5 w-5" />
-                            <span>GET A QUOTATION</span>
-                        </button>
+                        <div className='flex justify-center md:justify-start'>
+                            <button className="bg-yellow-500 hover:bg-yellow-600 text-white mt-5 px-6 py-3 rounded-md flex items-center space-x-2 transition-colors">
+                                <Package className="h-5 w-5" />
+                                <span>GET A QUOTATION</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
-            <section className="bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-sky-500 to-sky-900 dark:bg-grid-white/[0.05] mt-5 mb-5 p-8 rounded-2xl max-w-7xl mx-auto shadow-xl text-white py-20">
+            <section className="dark:bg-grid-white/[0.05] mt-5 mb-5 p-8 rounded-2xl max-w-7xl mx-auto shadow-xl text-white py-20">
                 <div className="max-w-7xl  mx-auto px-4">
                     <div className="max-w-full text-center ">
-                        <h1 className="text-5xl font-bold mb-6">
+                        <h1 className="text-3xl lg:text-5xl font-bold text-slate-900 mb-6">
                             What is a Carnet de Passages (CPD)?
                         </h1>
-                        <p className="text-xl text-center text-blue-100">
+                        <p className="text-xl text-center text-gray-900">
                             A Carnet de Passages (CPD) is an internationally recognized customs document that allows
                             vehicles to be temporarily imported into a foreign country without paying import duties or
                             taxes. It acts as a "vehicle passport," facilitating seamless entry and exit across countries

@@ -35,7 +35,7 @@ export default function Home() {
         {
             id: "automotive",
             title: "Automotive",
-            icon: <Truck className="w-12 h-12 text-blue-600" />,
+            icon: <Truck className="w-12 h-12 text-yellow-500"/>,
             image: '/images/automotive.jpg',
             description:
                 "The automotive industry demands precision and speed in logistics. We provide just-in-time (JIT) delivery, ensuring timely transport of automotive parts, components, and finished vehicles.",
@@ -50,7 +50,7 @@ export default function Home() {
         {
             id: "aviation",
             title: "Aviation",
-            icon: <Plane className="w-12 h-12 text-indigo-600" />,
+            icon: <Plane className="w-12 h-12 text-yellow-500" />,
             image: '/images/air-freight-hero1.webp',
             description:
                 "Aviation logistics require highly secure, time-sensitive, and specialized handling. We support airlines, MRO companies, and aircraft manufacturers with rapid and reliable logistics solutions.",
@@ -65,7 +65,7 @@ export default function Home() {
         {
             id: "fashion",
             title: "Fashion & Retail",
-            icon: <ShoppingBag className="w-12 h-12 text-pink-600" />,
+            icon: <ShoppingBag className="w-12 h-12 text-yellow-500" />,
             image: '/images/Fashion & Retail.jpg',
             description:
                 "The fashion and retail industries demand speed, flexibility, and seasonal logistics management. Our expertise ensures seamless global sourcing, distribution, and last-mile delivery.",
@@ -80,7 +80,7 @@ export default function Home() {
         {
             id: "healthcare",
             title: "Healthcare & Pharma",
-            icon: <Stethoscope className="w-12 h-12 text-emerald-600" />,
+            icon: <Stethoscope className="w-12 h-12 text-yellow-500" />,
             image: '/images/Healthcare & Pharma.jpg',
             description:
                 "Healthcare and pharmaceutical logistics require strict regulatory compliance, temperature control, and high security. We provide GMP-compliant logistics solutions for medical supplies and pharmaceuticals.",
@@ -95,7 +95,7 @@ export default function Home() {
         {
             id: "hospitality",
             title: "Hotel & Hospitality",
-            icon: <Building className="w-12 h-12 text-amber-600" />,
+            icon: <Building className="w-12 h-12 text-amber-500" />,
             image: '/images/Hospitality-Industry.jpg',
             description:
                 "Hotel logistics involve procurement, warehousing, and timely delivery of furnishings, food supplies, and equipment. We streamline supply chain operations for hotels, resorts, and restaurants.",
@@ -110,7 +110,7 @@ export default function Home() {
         {
             id: "industrial",
             title: "Industrial & Manufacturing",
-            icon: <Factory className="w-12 h-12 text-gray-600" />,
+            icon: <Factory className="w-12 h-12 text-yellow-500" />,
             image: '/images/Industrial & Manufacturing.jpg',
             description:
                 "Industrial logistics require heavy-duty transport, warehousing, and supply chain optimization. We support manufacturers by ensuring smooth material flow and on-time delivery.",
@@ -125,7 +125,7 @@ export default function Home() {
         {
             id: "sports",
             title: "Sports & Entertainment",
-            icon: <Dumbbell className="w-12 h-12 text-red-600" />,
+            icon: <Dumbbell className="w-12 h-12 text-yellow-500" />,
             image: '/images/Sports & Entertainment.webp',
             description:
                 "From event logistics to sports equipment transportation, we handle time-sensitive and specialized logistics for sports teams, tournaments, and entertainment productions.",
@@ -140,7 +140,7 @@ export default function Home() {
         {
             id: "technology",
             title: "Electronics & Technology",
-            icon: <Smartphone className="w-12 h-12 text-purple-600" />,
+            icon: <Smartphone className="w-12 h-12 text-yellow-500" />,
             image: '/images/Electronics & Technology.jpeg',
             description:
                 "The technology industry requires secure, time-sensitive, and high-value shipments. We specialize in the transportation of consumer electronics, semiconductors, and IT hardware.",
@@ -155,7 +155,7 @@ export default function Home() {
         {
             id: "chemical",
             title: "Chemical Industry",
-            icon: <Flask className="w-12 h-12 text-teal-600" />,
+            icon: <Flask className="w-12 h-12 text-yellow-500" />,
             image: '/images/Chemical Industry.jpg',
             description:
                 "Handling chemicals requires compliance with hazardous material regulations (HAZMAT), specialized packaging, and secure transport. Our logistics solutions ensure the safe movement of chemicals.",
@@ -170,7 +170,7 @@ export default function Home() {
         {
             id: "mining",
             title: "Metal & Mining",
-            icon: <Mountain className="w-12 h-12 text-stone-600" />,
+            icon: <Mountain className="w-12 h-12 text-yellow-500" />,
             image: '/images/Metal & Mining.jpg',
             description:
                 "The mining and metal industries demand robust logistics for heavy cargo, raw materials, and finished metals. We specialize in transporting ores, minerals, steel, and other metal products worldwide.",
@@ -264,7 +264,7 @@ export default function Home() {
         <main className="min-h-screen bg-white text-gray-800 overflow-hidden">
             {/* Hero Section */}
             <section className="w-full
-        h-[100dvh]
+        h-[800px]
             relative  overflow-hidden block z-10 bg-[url('/images/about-us-hero-bg.webp')]  bg-cover bg-no-repeat bg-fixed
             bg-center  before:content-[''] before:absolute before:inset-0 before:block 
             before:opacity-75
@@ -283,18 +283,16 @@ export default function Home() {
                                 </h2>
                             </div>
                             <div>
-                                <p className="text-2xl md:tex-3xl md:text-center  text-gray-50">
+                                <p className="text-2xl md:tex-3xl text-gray-50">
                                     Transpeed Cargo Pvt Ltd offers secure, efficient, and cost-effective freight solutions by air, sea, and land. We ensure reliable logistics tailored to your needs.
                                 </p>
                             </div>
                             <div className='pt-10'>
-
                                 <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-md flex md:items-center space-x-2 transition-colors">
                                     <Package className="h-5 w-5" />
                                     <span>GET A QUOTATION</span>
                                 </button>
                             </div>
-
                         </div>
 
                         <div className="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3">
@@ -302,23 +300,23 @@ export default function Home() {
                                 <div>
                                     <img
                                         className="mb-10"
-                                        src="/images/transpeed-about-us-hero.webp"
+                                        src="/images/industries-we-serve-hero.webp"
                                     />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="absolute bottom-10 left-0 right-0 flex justify-center">
+                {/* <div className="absolute bottom-10 left-0 right-0 flex justify-center">
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 1, duration: 0.8 }}
                         className="animate-bounce"
                     >
-                        <ArrowDown className="w-6 h-6 text-gray-600" />
+                        <ArrowDown className="w-9 h-9 text-gray-100" />
                     </motion.div>
-                </div>
+                </div> */}
             </section>
 
 
@@ -403,16 +401,16 @@ export default function Home() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
-                            className="inline-block mb-4 px-6 py-2 bg-blue-100 rounded-full text-blue-600 font-semibold"
+                            className="inline-block mb-4 px-6 py-2 bg-yellow-100 rounded-full text-yellow-500 font-semibold"
                         >
                             Specialized Solutions
                         </motion.div>
 
-                        <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                            Industry <Cover className={'text-white'}>Solutions</Cover>
+                        <h2 className="text-3xl lg:text-5xl font-bold mb-6">
+                            Industry Solutions
                         </h2>
 
-                        <TextReveal className="max-w-2xl mx-auto text-gray-600 text-lg">
+                        <TextReveal className="max-w-2xl mx-auto text-gray-900 text-lg">
                             Tailored logistics expertise for every sector, ensuring your specific needs are met with precision and
                             care.
                         </TextReveal>
@@ -458,10 +456,10 @@ export default function Home() {
                                                         viewport={{ once: true }}
                                                         transition={{ duration: 0.6, delay: 0.2 }}
                                                     >
-                                                        <h3 className="text-3xl font-bold mb-4 text-gray-900 flex items-center">
+                                                        <h3 className="text-3xl font-bold mb-4 text-slate-900 flex items-center">
                                                             {industry.title}
                                                             <motion.div
-                                                                className="ml-3 h-1 bg-blue-500"
+                                                                className="ml-3 h-1 bg-yellow-500"
                                                                 initial={{ width: 0 }}
                                                                 whileInView={{ width: 40 }}
                                                                 viewport={{ once: true }}
@@ -473,8 +471,8 @@ export default function Home() {
 
                                                         <div className="mb-6">
                                                             <div className="flex items-center mb-4">
-                                                                <div className="h-8 w-1 bg-blue-500 mr-3" />
-                                                                <h4 className="text-xl font-semibold text-gray-800">Our Solutions</h4>
+                                                                <div className="h-8 w-1 bg-yellow-500 mr-3" />
+                                                                <h4 className="text-xl font-semibold text-[#121d42]">Our Solutions</h4>
                                                             </div>
 
                                                             <div className="grid md:grid-cols-2 gap-4">
@@ -487,7 +485,7 @@ export default function Home() {
                                                                         transition={{ duration: 0.4, delay: 0.1 * idx }}
                                                                         className="flex items-start gap-3 p-4 rounded-lg bg-gradient-to-br from-white to-gray-50 shadow-sm border border-gray-300    hover:shadow-md transition-all duration-300 group"
                                                                     >
-                                                                        <CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0 group-hover:text-blue-500 transition-colors" />
+                                                                        <CheckCircle2 className="w-5 h-5 text-yellow-500 mt-0.5 flex-shrink-0 group-hover:text-[#121d42] transition-colors" />
                                                                         <span className="text-gray-900">{solution}</span>
                                                                     </motion.div>
                                                                 ))}

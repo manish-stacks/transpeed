@@ -10,7 +10,7 @@ export default function WhyChoose() {
                     <h2 className="text-xl md:text-5xl max-[768px]:text-3xl font-bold mb-4 w-full max-[767px]:w-5xl mx-auto">Why Choose Transpeed’s <Cover className={'rounded-xl'}>Cargo</Cover>   </h2>
 
                 </div>
-                <div className="relative grid min-[992px]:grid-cols-2 min-[768px]:grid-col-3 w-full md:px-40 px:5">
+                <div className="relative grid min-[992px]:grid-cols-4 min-[569px]:grid-cols-2 w-full lg:px-40 px:5">
                     <div className="relative bg-slate-100/10 text-center mx-6 my-5 p-5 rounded-lg">
                         <div className=''>
                             <img src="/images/rating.png" className='mx-auto w-20' />

@@ -7,7 +7,7 @@ export default function WhyChoose() {
             <div className="bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-sky-500 to-sky-900 dark:bg-grid-white/[0.05] text-white py-20 text-center">
                 <div className='grid grid-cols-1'>
 
-                    <h2 className="text-xl md:text-5xl max-[768px]:text-3xl font-bold mb-4 w-full max-[767px]:w-5xl mx-auto">Why Choose Transpeed’s<br /> Cargo for  <Cover>Custom Clearance Solutions</Cover> </h2>
+                    <h2 className="text-xl md:text-5xl max-[768px]:text-3xl font-bold mb-4 w-full max-[767px]:w-5xl mx-auto">Why Choose Transpeed’s<br /> Cargo for  Custom Clearance Solutions</h2>
 
                 </div>
                 <div className="relative grid min-[992px]:grid-cols-3 min-[768px]:grid-col-3 w-full md:px-40 px:5">
@@ -41,7 +41,7 @@ export default function WhyChoose() {
                             <img src="/images/support.png" className='mx-auto w-20' />
                         </div>
                         <h3 className="mt-4 text-lg font-bold">
-                            <span className="text-yellow-500">✅ End-to-End Support</span>
+                            <span className="text-yellow-500">End-to-End Support</span>
                         </h3>
                         <div className=" text-gray-300 mt-2">
                             <p> From shipment booking to last-mile delivery, we provide complete

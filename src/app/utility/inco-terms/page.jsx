@@ -1,10 +1,10 @@
 
 "use client"
 import { useEffect, useState, useRef } from "react"
-import Hero from "@/components/inco-terms/hero"
 import { pageContent } from "@/lib/content"
 import ContentSection from "@/components/inco-terms/ContentSection"
 import TableOfContents from "@/components/inco-terms/TableOfContents"
+import Hero from "@/components/inco-terms/Hero"
 
 
 export default function IncoTermsPage() {
