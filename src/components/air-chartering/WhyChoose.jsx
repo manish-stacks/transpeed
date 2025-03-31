@@ -63,7 +63,7 @@ export default function WhyChoose() {
                             <span className="text-yellow-500">Real-Time Tracking</span>
                         </h3>
                         <div className=" text-gray-300 mt-2">
-                            <p>Stay informed with full visibility of your cargo's journey through our advanced<br/>tracking systems. </p>
+                            <p>Stay informed with full visibility of your cargo&apos;s journey through our advanced<br/>tracking systems. </p>
                         </div>
                     </div>
                 </div >

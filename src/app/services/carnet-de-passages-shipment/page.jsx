@@ -38,10 +38,10 @@ const page = () => {
                             What is a Carnet de Passages (CPD)?
                         </h1>
                         <p className="text-xl text-center text-gray-900">
-                            A Carnet de Passages (CPD) is an internationally recognized customs document that allows
+                            {`A Carnet de Passages (CPD) is an internationally recognized customs document that allows
                             vehicles to be temporarily imported into a foreign country without paying import duties or
                             taxes. It acts as a "vehicle passport," facilitating seamless entry and exit across countries
-                            that are part of the <b><i>ATA Carnet Convention.</i></b>
+                            that are part of the`} <b><i>ATA Carnet Convention.</i></b>
                             .
                         </p>
                     </div>

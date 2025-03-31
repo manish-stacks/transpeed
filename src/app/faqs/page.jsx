@@ -135,8 +135,8 @@ function FAQPage() {
                                     key={index}
                                     onClick={() => setActiveTab(index)}
                                     className={`p-4 rounded-xl text-center transition-all duration-200 ${activeTab === index
-                                            ? 'bg-blue-50 border-blue-100 border text-blue-700'
-                                            : 'bg-gray-50 hover:bg-gray-100 text-gray-700'
+                                        ? 'bg-blue-50 border-blue-100 border text-blue-700'
+                                        : 'bg-gray-50 hover:bg-gray-100 text-gray-700'
                                         }`}
                                 >
                                     <div className="flex flex-col items-center">
@@ -178,14 +178,14 @@ function FAQPage() {
                                         <Image
                                             src="/images/no.gif"
                                             alt="No results found"
-                                         
-                                           fill
+
+                                            fill
                                             className="object-contain"
                                         />
                                     </div>
                                     <h3 className="text-xl font-medium text-gray-800 mb-2">No results found</h3>
                                     <p className="text-gray-600 max-w-md mx-auto">
-                                        We couldn't find any FAQs matching your search. Try using different keywords or browse the categories.
+                                        We couldn&apos;t find any FAQs matching your search. Try using different keywords or browse the categories.
                                     </p>
                                     <button
                                         onClick={() => setSearchQuery('')}
@@ -205,7 +205,7 @@ function FAQPage() {
                         <div className="p-8 md:p-12">
                             <h2 className="text-2xl font-bold text-gray-900 mb-4">Still have questions?</h2>
                             <p className="text-gray-600 mb-6">
-                                If you couldn't find the answer to your question, our support team is here to help you.
+                                If you couldn&apos;t find the answer to your question, our support team is here to help you.
                             </p>
                             <div className="space-y-4">
                                 <div className="flex items-start gap-4">

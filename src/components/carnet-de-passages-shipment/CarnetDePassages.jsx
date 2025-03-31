@@ -42,7 +42,7 @@ export default function CarnetDePassages() {
                 <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="mx-auto mb-16 max-w-3xl text-center">
                         <h2 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                            Transpeed <i>Cargo's Expertise</i> in Carnet de Passages <span className="text-[#2C95D4]">Shipments</span>
+                            Transpeed <i>Cargo&apos;s Expertise</i> in Carnet de Passages <span className="text-[#2C95D4]">Shipments</span>
                         </h2>
                         <p className="text-lg text-gray-900">
                             We specialize in handling Carnet de Passages shipments for a wide range of industries and purposes

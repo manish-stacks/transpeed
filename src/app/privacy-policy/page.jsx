@@ -21,10 +21,10 @@ function page() {
 
                     <div className="prose prose-slate max-w-none">
                         <p className="text-gray-900 mb-6">
-                            Transpeed Cargo Private Limited ("Transpeed Cargo," "we," "our," or "us") is
+                            {`Transpeed Cargo Private Limited ("Transpeed Cargo," "we," "our," or "us") is
                             committed to protecting your privacy. This Privacy Policy explains how we collect,
                             use, store, and safeguard your personal and business information when you use our
-                            logistics, freight forwarding, and supply chain management services.
+                            logistics, freight forwarding, and supply chain management services.`}
                         </p>
 
                         <section className="mb-8">

@@ -25,7 +25,7 @@ export default function KeyBenefits() {
         <div className="absolute left-0 w-full border-t-2 border-dashed border-orange-500 -z-10"></div>
         {steps.map((step, index) => (
           step.image ? (
-            <img src={step.image} className="mx-auto p-5"/>
+            <img key={index} src={step.image} className="mx-auto p-5"/>
           ) : (
             <div key={index} className="relative bg-slate-100/10 text-center mx-6 my-5 p-5 rounded-lg">
               <div className="w-28 h-28 bg-gray-100 rounded-full flex items-center justify-center mx-auto text-4xl">
