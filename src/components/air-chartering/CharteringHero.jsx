@@ -4,7 +4,7 @@ import { Package } from "lucide-react";
 
 export default function AirHero() {
     return (
-        <div className="relative h-[750px] flex items-center justify-center bg-cover bg-center " style={{ backgroundImage: "url('/images/air-chartering-hero.webp')" }}>
+        <div className="relative h-[750px] flex items-center justify-center bg-cover bg-center  mt-16" style={{ backgroundImage: "url('/images/air-chartering-hero.webp')" }}>
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-sky-900/80 to-sky-500/10"></div>
 

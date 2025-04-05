@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
-import { ChevronDown, Search, Shield, CheckCircle, HelpCircle, MessageCircle, ArrowRight } from 'lucide-react';
+import { ChevronDown, Search, Shield, CheckCircle, HelpCircle, MessageCircle, ArrowRight, Link } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { faqData } from '@/components/FaqData/FaqData';
@@ -106,7 +106,7 @@ function FAQPage() {
                 {/* Hero Section */}
                 <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
                     <div className="relative h-64 sm:h-62 bg-blue-600">
-                        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 opacity-90"></div>
+                        <div className="absolute inset-0 bg-gradient-to-r from-sky-600 to-sky-800 opacity-90"></div>
                         <div className="absolute inset-0 bg-[url('/images/faq-pattern.png')] opacity-20"></div>
 
                         <div className="relative h-full flex flex-col justify-center px-6 sm:px-12">
@@ -223,7 +223,7 @@ function FAQPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-medium text-gray-900">Call us</h3>
-                                        <p className="text-gray-600 text-sm">+91 123 456 7890 (Mon-Fri, 9am-6pm)</p>
+                                        <p className="text-gray-600 text-sm">+91-9354382988 (Mon-Fri, 9am-6pm)</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">
@@ -232,14 +232,15 @@ function FAQPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-medium text-gray-900">Email us</h3>
-                                        <p className="text-gray-600 text-sm">support@transpeedcargo.com</p>
+                                        <p className="text-gray-600 text-sm">Contact@transpeed.in</p>
                                     </div>
                                 </div>
                             </div>
-                            <button className="mt-8 px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors flex items-center">
+                            <a href="tel:9354382988" className="justify-center mt-8 px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors flex items-center">
                                 Contact Support
                                 <ArrowRight className="ml-2 h-4 w-4" />
-                            </button>
+                            </a>
+
                         </div>
                         <div className="relative hidden md:block">
                             <div className="absolute inset-0 bg-blue-600 opacity-10"></div>

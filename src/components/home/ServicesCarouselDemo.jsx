@@ -55,49 +55,49 @@ const data = [
     desc:"Transpeed Cargo Pvt Ltd has a well-established global agency network supporting the FCL / LCL Forwarding service of Global Logistics....",
     src: "/images/sea-freight-forwarding.webp",
     content: <DummyContent />,
-    link: "abc"
+    link: "/services/ocean-freight"
   },
   {
     title: "Air Freight",
     desc:"From small express shipments to large scale projects, DDU/DAP or Express, our air cargo division is well equipped with the latest technology....",
     src: "/images/air-freight-forwarding.webp",
     content: <DummyContent />,
-    link: "abc"
+    link: "services/air-freight"
   },
   {
     title: "Air Chartering",
     desc:"Transpeed Cargo Pvt. Ltd. offers exceptional Air Chartering Solutions tailored to meet urgent and specialized cargo needs.... ",
     src: "/images/air-chartering.webp",
     content: <DummyContent />,
-    link: "abc"
+    link: "services/air-chartering"
   },
   {
     title: "Project Cargo",
     desc:"At Transpeed Cargo Private Limited, we specialize in delivering tailored Project Cargo solutions to handle complex, oversized, and heavy-lift....",
     src: "/images/project-cargo.webp",
     content: <DummyContent />,
-    link: "abc"
+    link: "/services/project-cargo"
   },
    {
     title: "CFS Inbound/Outbound Solutions",
     desc:"Transpeed Cargo Pvt. Ltd. ensures seamless CFS solutions for efficient cargo handling, storage, and transport, optimizing your supply chain....",
     src: "/images/cfs-inbond-outbond.webp",
     content: <DummyContent />,
-    link: "abc"
+    link: "/services/cfs-inbound-outbond"
   },
   {
     title: "Custom Clearance",
     desc:"We have a well dedicated team of professionals to take care of your complete Customs clearance procedures....",
     src: "/images/custom-clearance.webp",
     content: <DummyContent />,
-    link: "abc"
+    link: "/services/custom-clearance"
   },
   {
-    title: "Road Transportation",
-    desc:"We offer our services to round the world destinations through our well established network of operations. Our transportation services....",
+    title: "Carnet De Passages Shipment",
+    desc:"A Carnet de Passages (CPD) is an internationally recognized customs document that allows vehicles to be temporarily imported into a foreign country....",
     src: "/images/road-transportation.webp",
     content: <DummyContent />,
-    link: "abc"
+    link: "/services/carnet-de-passages-shipment"
   },
 
   {
@@ -105,14 +105,14 @@ const data = [
     desc:"Transpeed Cargo offers secure, efficient warehousing solutions with inventory management, real-time tracking, and seamless distribution services....",
     src: "/images/wherehousing.webp",
     content: <DummyContent />,
-    link: "abc"
+    link: ""
   },
   {
     title: "Rail Transportation",
     desc:"Transpeed Cargo offers efficient, reliable rail transportation, ensuring timely deliveries with cost-effective logistics solutions across India....",
     src: "/images/rail-transportation.webp",
     content: <DummyContent />,
-    link: "abc"
+    link: ""
   },
  
 ];

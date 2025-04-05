@@ -20,7 +20,7 @@ export default function Hero() {
     }, [isMenuOpen]);
 
     return (
-        <div className="min-h-full relative overflow-hidden">
+        <div className="min-h-full relative overflow-hidden mt-16">
             {/* Video Background */}
             <video
                 autoPlay
@@ -36,24 +36,24 @@ export default function Hero() {
               {/* Hero Section */}
                 <div className="container mx-auto px-4 pt-28 pb-22">
                     <div className="max-w-3xl">
-                        <h1 className="text-7xl md:text-4xl font-bold mb-6 max-[545px]:text-4xl">
+                        <h1 className="text-7xl text-center md:text-start md:text-4xl font-bold mb-6 max-[545px]:text-4xl">
                             <span className="text-white">Transportation And </span>
                             {/* <span className="text-blue-300">powered</span> */}
                             <br />
                             <span className="text-blue-200 text-7xl max-[545px]:text-4xl">Logistics Service Provider</span>
                         </h1>
-                        <p className="text-xl text-white/90 mb-8">
+                        <p className="text-xl text-center md:text-start text-white/90 mb-8">
                             Revolutionizing Supply Chain Management with Intelligent Automation and Predictive Analytics
                         </p>
-                        <div className="flex flex-wrap gap-4">
+                        <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                             <button className="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-md flex items-center space-x-2 transition-colors">
                                 <Package className="h-5 w-5" />
                                 <span>GET A QUOTATION</span>
                             </button>
-                            <button className="border-2 border-white text-white px-6 py-3 rounded-md flex items-center space-x-2 hover:bg-white/10 transition-colors">
+                            {/* <button className="border-2 border-white text-white px-6 py-3 rounded-md flex items-center space-x-2 hover:bg-white/10 transition-colors">
                                 <Plane className="h-5 w-5" />
                                 <span>TRACK SHIPMENT</span>
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                 </div>
@@ -63,15 +63,15 @@ export default function Hero() {
                     <div className="flex flex-wrap justify-between gap-8">
                         <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 flex-1">
                             <div className="text-4xl font-bold text-white mb-2">95%</div>
-                            <div className="text-blue-200">satisfied clients worldwide</div>
-                        </div>
-                        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 flex-1">
-                            <div className="text-4xl font-bold text-white mb-2">10,000+</div>
-                            <div className="text-blue-200">monthly shipments</div>
+                            <div className="text-blue-200 text-lg font-medium">Satisfied Clients Worldwide</div>
                         </div>
                         <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 flex-1">
                             <div className="text-4xl font-bold text-white mb-2">99%</div>
-                            <div className="text-blue-200">Realtime service uptime</div>
+                            <div className="text-blue-200 text-lg font-medium">On Time Delivery</div>
+                        </div>
+                        <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 flex-1">
+                            <div className="text-4xl font-bold text-white mb-2">99%</div>
+                            <div className="text-blue-200 text-lg font-medium">Service Satisfaction</div>
                         </div>
                     </div>
                 </div>

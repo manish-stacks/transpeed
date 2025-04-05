@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const counters = [
-  { label: "Metric Tones", endValue: 5000},
+  { label: "Metric Tones of Air Cargo", endValue: 500},
   { label: "Containers", endValue: 1200 },
-  { label: "Domestic Hubs", endValue: 150 },
-  { label: "Happy Customers", endValue: 10000 },
+  { label: "Domestic Hubs", endValue: 100 },
+  { label: "Happy Customers", endValue: 500 },
 ];
 
 const CounterHome = () => {
@@ -44,7 +44,7 @@ const CounterHome = () => {
               key={index}
               className="p-6 bg-white rounded-xl shadow-lg text-center"
             >
-              <h2 className="text-5xl font-extrabold text-yellow-500">{counts[index]}</h2>
+              <h2 className="text-5xl font-extrabold text-yellow-500">{counts[index]}+</h2>
               <p className="mt-2 text-lg text-gray-900 font-bold">{counter.label}</p>
             </div>
           ))}

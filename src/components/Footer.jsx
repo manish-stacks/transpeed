@@ -10,40 +10,43 @@ import {
 
 const Footer = () => {
   const companyInfo = {
-    logo: "/images/transpeedogo.webp",
+    logo: "/images/transpeed-logo.webp",
     name: "Transpeed Cargo Pvt. Ltd.",
-    officeAddress: "AD - 7E, Pitampura, Delhi 110034",
+    officeAddress: "603, 6th Floor, Pearl Business Park, Netaji Subhash Place, Delhi 110034",
     registeredAddress: "K-18, 1st Floor, Navin Shahdara, Delhi 110032",
     email: "contact@transpeed.in",
-    phone: "+91 9354382988",
+    phone: "+91-9354382988",
   };
 
   const socialLinks = [
-    { icon: <FaFacebookF />, href: "#" },
-    { icon: <FaLinkedinIn />, href: "#" },
-    { icon: <FaInstagram />, href: "#" },
-    { icon: <FaXTwitter />, href: "#" },
+    { icon: <FaFacebookF />, href: "https://www.facebook.com/transpeedcargo/" },
+    { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/company/transpeed-cargo-pvt-ltd" },
+    { icon: <FaInstagram />, href: "https://www.instagram.com/transpeedcargo/?hl=en" },
+
   ];
 
   const footerLinks = [
     {
       title: "Useful Links",
-      links: ["Home", "About Us", "Industries", "News", "Contact Us"],
+      linksTitle: ["Home", "About Us", "Industries", "News & Insights", "Contact Us"],
+      links: ["/", "/about-us", "/industry-solution", "/contact-us"],
     },
     {
       title: "Logistics Services",
-      links: ["Ocean Freight", "Air Freight", "Air Chartering", "Project Cargo", "CFS Inbound/Outbound", "Custom Clearance","Carnet De Passages Shipment"],
+      linksTitle: ["Ocean Freight", "Air Freight", "Air Chartering", "Project Cargo", "CFS Inbound/Outbound", "Custom Clearance", "Carnet De Passages Shipment"],
+      links: ["/services/ocean-freight", "/services/air-freight", "/services/air-chartering", "/services/project-cargo", "/services/cfs-inbound-outbond", "/services/custom-clearance", "/services/carnet-de-passages-shipment"],
     },
     {
       title: "Support",
-      links: ["Privacy Policy", "Terms & Conditions", "Book An Appointment", "Support", "Blog","FAQs"],
+      linksTitle: ["Privacy Policy", "Terms & Conditions", "Blog", "FAQs"],
+      links: ["/privacy-policy", "/terms-and-conditions", "", "/faqs"],
     },
   ];
 
   return (
     <footer className="bg-[url('/images/footer-bg.webp')] bg-cover bg-center text-gray-900 pt-20 pb-10 px-6 md:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        
+
         {/* Branding & Contact */}
         <div className="rounded-2xl">
           <img src={companyInfo.logo} alt="Company Logo" className="w-[180px]" />
@@ -72,16 +75,17 @@ const Footer = () => {
           <div key={index} className="rounded-2xl">
             <h3 className="font-bold text-yellow-400 text-2xl">{section.title}</h3>
             <ul className="text-md mt-2 space-y-1 text-white">
-              {section.links.map((link, idx) => (
+              {section.links.map((_, idx) => (
                 <li key={idx}>
-                  <Link href={`/${link.toLowerCase().replace(/ /g, "-")}`} className="hover:text-yellow-400 transition duration-200">
-                    {link}
+                  <Link href={section.links[idx]} className="hover:text-yellow-400 transition duration-200">
+                    {section.linksTitle[idx]}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
         ))}
+
       </div>
 
       {/* Bottom Footer */}

@@ -11,10 +11,10 @@ export default function ContactForm() {
           <h2 className="min-[768px]:text-5xl max-[767px]:text-3xl font-bold text-yellow-500 text-center md:text-left">Have a Query? <br /> Get in touch</h2>
           <div className=" space-y-3 mt-8 mb-5">
           <p className="flex text-xl items-center bg-gray-100/15 p-2 max-w-md rounded-md"><span className="font-semibold"><IconPhone className="mr-2"/></span> +91-9354382988</p>
-          <p className="flex text-xl items-center bg-gray-100/15 p-2 max-w-md rounded-md"><span className="font-semibold"><IconMailDown className="mr-2"/> </span> contact@transpeed.in</p>
-          <p className="flex text-xl items-center bg-gray-100/15 p-2 max-w-md rounded-md"><span className="font-semibold"><IconMailDown className="mr-2"/> </span> arpit@transpeed.in</p>
-          <p className="flex text-xl items-center bg-gray-100/15 p-2 max-w-md rounded-md"><span className="font-semibold"><IconMailDown className="mr-2"/> </span> anubhav@transpeed.in</p>
-          <p className="flex text-xl items-center bg-gray-100/15 p-2 max-w-md rounded-md"><span className="font-semibold"><IconMapPin className="mr-2" /></span> AD - 7E, Pitampura, Delhi 110034</p>
+          <p className="flex text-xl items-center bg-gray-100/15 p-2 max-w-md rounded-md"><span className="font-semibold"><IconMailDown className="mr-2"/> </span>  Contact@transpeed.in</p>
+          <p className="flex text-xl items-center bg-gray-100/15 p-2 max-w-md rounded-md"><span className="font-semibold"><IconMapPin className="mr-2" /></span> 603, 6th Floor, Pearl Business Park, Netaji Subhash Place, Delhi 110034</p>
+          {/* <p className="flex text-xl items-center bg-gray-100/15 p-2 max-w-md rounded-md"><span className="font-semibold"><IconMailDown className="mr-2"/> </span> arpit@transpeed.in</p>
+          <p className="flex text-xl items-center bg-gray-100/15 p-2 max-w-md rounded-md"><span className="font-semibold"><IconMailDown className="mr-2"/> </span> anubhav@transpeed.in</p> */}
           </div>
         </div>
         

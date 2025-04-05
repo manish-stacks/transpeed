@@ -7,12 +7,12 @@ import UseCases from '@/components/project-cargo/UseCases';
 export default function page() {
   return (
     <>
-      <div className="relative h-[600px] flex items-center justify-center bg-cover bg-center " style={{ backgroundImage: "url('/images/project-cargo-hero.webp')" }}>
+      <div className="relative h-[600px] flex items-center justify-center bg-cover bg-center  mt-16" style={{ backgroundImage: "url('/images/project-cargo-hero.webp')" }}>
 
         <div className="absolute inset-0 bg-gradient-to-r from-sky-900 to-sky-500/10"></div>
 
         {/* Hero Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 px-7 lg:px-40">
+        <div className="grid grid-cols-1 md:grid-cols-2 px-7 lg:px-40 ">
           <div className="space-y-8 relative z-10 max-w-8xl p-6 text-white text-center md:text-left">
             <h3 className="text-yellow-400 text-2xl -mb-5">Transpeed Cargo Pvt. Ltd. </h3>
             <h1 className="text-4xl font-bold lg:text-6xl">Project Cargo Solutions</h1>

@@ -261,7 +261,7 @@ export default function Home() {
     const backgroundScale = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0.8, 1, 1, 0.8])
 
     return (
-        <main className="min-h-screen bg-white text-gray-800 overflow-hidden">
+        <main className="min-h-screen bg-white text-gray-800 overflow-hidden mt-16">
             {/* Hero Section */}
             <section className="w-full
         h-[800px]

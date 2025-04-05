@@ -34,7 +34,7 @@ function FeatureCard({ icon: Icon, title, description }) {
 export default function Page() {
     return (
         <>
-            <div className="relative h-[600px] flex items-center justify-center bg-cover bg-center " style={{ backgroundImage: "url('/images/cfs-inbond-hero.webp')" }}>
+            <div className="relative h-[600px] flex items-center justify-center bg-cover bg-center  mt-16" style={{ backgroundImage: "url('/images/cfs-inbond-hero.webp')" }}>
 
                 <div className="absolute inset-0 bg-gradient-to-r from-sky-900/80 to-sky-500/10"></div>
 

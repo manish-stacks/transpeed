@@ -6,7 +6,7 @@ import React from 'react'
 export default function Hero() {
   return (
     <>
-    <div class="relative h-[500px] md:h-[700px]">
+    <div class="relative h-[500px] md:h-[700px]  mt-16">
         <video
           autoPlay
           loop

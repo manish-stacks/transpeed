@@ -11,7 +11,7 @@ export default function About() {
             relative  overflow-hidden block z-10 bg-[url('/images/about-us-hero-bg.webp')]  bg-cover bg-no-repeat bg-fixed
             bg-center  before:content-[''] before:absolute before:inset-0 before:block 
             before:opacity-75
-            before:z-[-5]">
+            before:z-[-5]  mt-16">
         <div className=" text-white py-10">
           <div className="container mx-auto flex flex-col md:flex-row items-center justify-center my-10 md:my-24 relative">
             <div className="space-y-5 flex flex-col w-full lg:w-2/3 items-center md:items-start p-8 ">

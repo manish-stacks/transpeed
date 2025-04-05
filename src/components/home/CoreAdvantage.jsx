@@ -26,9 +26,9 @@ export default function CoreAdvantage() {
                             </div>
                         </div>
                         <div className='bg-[#d3edff] p-5 rounded-xl'>
-                            <img src='/images/box.png' className='flex mx-auto'></img>
+                            <img src='/images/on-time-delivery.png' className='flex mx-auto'></img>
                             <div>
-                                <h3 className='font-bold text-xl'>Guaranteed Destuffing</h3>
+                                <h3 className='font-bold text-xl'>On Time Stuffing</h3>
                             </div>
                         </div>
                         <div className='bg-[#d3edff] p-5 rounded-xl'>
@@ -38,63 +38,31 @@ export default function CoreAdvantage() {
                             </div>
                         </div>
                         <div className='bg-[#d3edff] p-5 rounded-xl'>
-                            <img src='/images/home.png' className='flex mx-auto'></img>
+                            <img src='/images/All-Major-Ports-and-lcd.png' className='flex mx-auto'></img>
                             <div>
-                                <h3 className='font-bold text-xl'>28 Hubs in India</h3>
+                                <h3 className='font-bold text-xl'>All Major Ports and ICD</h3>
                             </div>
                         </div>
                         <div className='bg-[#d3edff] p-5 rounded-xl'>
-                            <img src='/images/global-network.png' className='flex mx-auto'></img>
+                            <img src='/images/On-Time-De-stuffing.png' className='flex mx-auto'></img>
                             <div>
-                                <h3 className='font-bold text-xl'>Global Network</h3>
+                                <h3 className='font-bold text-xl'>On Time De-stuffing</h3>
                             </div>
                         </div>
                         <div className='bg-[#d3edff] p-5 rounded-xl'>
-                            <img src='/images/leadership.png' className='flex mx-auto'></img>
+                            <img src='/images/Cost-Effective.png' className='flex mx-auto'></img>
                             <div>
-                                <h3 className='font-bold text-xl'>Expert Team</h3>
+                                <h3 className='font-bold text-xl'>Cost Effective</h3>
                             </div>
                         </div>
                         <div className='bg-[#d3edff] p-5 rounded-xl'>
-                            <img src='/images/box.png' className='flex mx-auto'></img>
+                            <img src='/images/Customer-Oriented-Solution.png' className='flex mx-auto'></img>
                             <div>
-                                <h3 className='font-bold text-xl'>Guaranteed Destuffing</h3>
-                            </div>
-                        </div>
-                        {/* <div className='bg-[#d3edff] p-5 rounded-xl'>
-                            <img src='/images/ino-solutions.png' className='flex mx-auto'></img>
-                            <div>
-                                <h3 className='font-bold text-xl'>Innovative Solution</h3>
-                            </div>
-                        </div> */}
-                    </div>
-                    {/* <div className='grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-6 text-center'>
-                        <div className='bg-[#d3edff] p-5 rounded-xl'>
-                            <img src='/images/global-network.png' className='flex mx-auto'></img>
-                            <div>
-                                <h3 className='font-bold text-xl'>Global Network</h3>
-                            </div>
-                        </div>
-                        <div className='bg-[#d3edff] p-5 rounded-xl'>
-                            <img src='/images/leadership.png' className='flex mx-auto'></img>
-                            <div>
-                                <h3 className='font-bold text-xl'>Expert Team</h3>
-                            </div>
-                        </div>
-                        <div className='bg-[#d3edff] p-5 rounded-xl'>
-                            <img src='/images/box.png' className='flex mx-auto'></img>
-                            <div>
-                                <h3 className='font-bold text-xl'>Guaranteed Destuffing</h3>
-                            </div>
-                        </div>
-                        <div className='bg-[#d3edff] p-5 rounded-xl'>
-                            <img src='/images/ino-solutions.png' className='flex mx-auto'></img>
-                            <div>
-                                <h3 className='font-bold text-xl'>Innovative Solution</h3>
+                                <h3 className='font-bold text-xl'>Customer Oriented Solution</h3>
                             </div>
                         </div>
 
-                    </div> */}
+                    </div>
 
                 </div>
             </section>

@@ -61,7 +61,7 @@ export default function StrategicFoundations() {
                                 initial={{ x: "100%" }}
                                 animate={{ x: activeSection === section.title ? "0%" : "100%" }}
                                 transition={{ type: "tween", duration: 0.5 }}
-                                className="absolute top-0 left-0 w-full h-auto flex flex-col justify-center items-center p-6 bg-gray-100/10 rounded-2xl shadow-3xl ">
+                                className="absolute top-0 left-0 w-full h-auto flex flex-col justify-center items-center p-6 bg-gray-100/10 rounded-2xl shadow-3xl py-14 ">
                                 <h2 className="text-3xl font-bold mb-4 text-yellow-500">{section.title}</h2>
                                 <p className="text-lg mb-6 text-center max-w-2xl">
                                     {section.description}
@@ -69,7 +69,7 @@ export default function StrategicFoundations() {
                                 <img
                                     src={section.image}
                                     alt={section.title}
-                                    className="w-48 h-48 object-cover rounded-lg"
+                                    className="rounded-lg"
                                 />
                             </motion.div>
                         ))}

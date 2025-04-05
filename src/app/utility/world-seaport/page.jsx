@@ -4,8 +4,8 @@ import React from 'react';
 
 const Page = () => {
   return (
-    <div className='max-w-7xl mx-auto min-h-screen px-4 py-10'>
-      <h1 className='bg-yellow-500 p-3 rounded-md text-3xl lg:text-5xl font-bold text-center text-slate-100 mb-12'>
+    <div className='max-w-7xl mx-auto min-h-screen px-4 py-10 mt-28 mb-16'>
+      <h1 className='bg-yellow-500 p-3 rounded-md text-3xl lg:text-5xl font-bold text-center text-slate-100 mb-12 '>
         Sea Ports in the World
       </h1>
       

@@ -10,7 +10,7 @@ export default function KeyBenefits() {
       id: "05", title: "Value-Added Ocean Freight Services", icon: "🚚", description: "Weekly Bonded trucking service to  Delhi, Ahmedabad etc from  Nhava sheva and Bangalore, Hyderabad from Chennai.",
       list: ["Door-to-door deliveries", "Customs brokerage", "Cargo insurance", "Real-time shipment tracking ", "Specialized packaging and handling "]
     },
-    { image: "/images/ocian-fright.webp" },
+    { image: "/images/sea-freight-logistic-service.png" },
 
   ];
 

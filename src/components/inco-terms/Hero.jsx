@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export default function Hero({ title, subtitle, date }) {
   return (
-    <div className="relative bg-blue-950 text-white">
+    <div className="relative bg-blue-950 text-white mt-20">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-950/90 to-blue-900/90" />
       </div>
