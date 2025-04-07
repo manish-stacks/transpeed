@@ -2,7 +2,7 @@ import React from 'react';
 
 const page = () => {
   return (
-    <div className="max-w-7xl mx-auto p-6">
+    <div className="max-w-7xl mx-auto p-6 mt-28 mb-10">
       <h1 className="text-3xl font-bold text-gray-900 mb-6">Terms & Conditions</h1>
       <p className="text-gray-900">Effective Date: 26/3/2025</p>
       <p className="text-gray-900 mb-4">Last Updated:  26/3/2025</p>

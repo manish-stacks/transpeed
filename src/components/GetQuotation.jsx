@@ -20,7 +20,7 @@ function App() {
     return (
         <div className="min-h-screen bg-gray-50 p-4 md:p-8">
             <div className="max-w-6xl mx-auto">
-                <h1 className="text-3xl md:text-4xl font-bold text-[#1e3a8a] mb-8 text-center">Get a quotation</h1>
+                <h1 className="text-3xl md:text-5xl font-bold text-sky-900 mb-8 text-center">Get a quotation</h1>
 
                 {/* Shipping Type Tabs */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-2 mb-8">

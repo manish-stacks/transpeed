@@ -15,7 +15,7 @@ const FAQItem = ({ item, index }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: index * 0.1 }}
-            className={`border border-gray-100 rounded-xl overflow-hidden bg-white shadow-sm hover:shadow-md transition-all duration-300 ${isOpen ? 'shadow-md' : ''}`}
+            className={`border border-gray-100 rounded-xloverflow-hidden bg-white shadow-sm hover:shadow-md transition-all duration-300 ${isOpen ? 'shadow-md' : ''}`}
         >
             <button
                 className="flex w-full justify-between items-center text-left p-5"
@@ -101,7 +101,7 @@ function FAQPage() {
         })).filter(section => section.items.length > 0);
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-4">
+        <div className="min-h-screen bg-gradient-to-b mt-28 mb-14 from-gray-50 to-gray-100 py-4">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Hero Section */}
                 <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">

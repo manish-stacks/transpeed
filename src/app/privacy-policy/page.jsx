@@ -9,11 +9,11 @@ function page() {
     });
 
     return (
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen bg-gray-50 mt-24">
             <div className="max-w-7xl mx-auto px-4 py-12">
                 <div className="bg-white rounded-xl shadow-lg p-8">
                     <div className="flex items-center gap-3 mb-6">
-                        <Shield className="w-8 h-8 text-blue-600" />
+                        <Shield className="w-8 h-8 text-sky-600" />
                         <h1 className="text-3xl font-bold text-gray-900">Privacy Policy</h1>
                     </div>
 

@@ -7,6 +7,7 @@ import {
   FaInstagram,
   FaXTwitter,
 } from "react-icons/fa6";
+import WhatsappChat from "./whatsapp/WhatsappChat";
 
 const Footer = () => {
   const companyInfo = {
@@ -69,6 +70,8 @@ const Footer = () => {
             ))}
           </div>
         </div>
+
+        <WhatsappChat />
 
         {/* Footer Sections */}
         {footerLinks.map((section, index) => (
