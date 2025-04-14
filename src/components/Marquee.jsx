@@ -72,7 +72,7 @@ export default function ImageMarqueeCarousel() {
   }, [isPaused]);
 
   return (
-    <div className="relative w-full overflow-hidden bg-[#0A174E] py-10">
+    <div className="relative w-full overflow-hidden bg-[#fff] py-10">
       <div
         ref={marqueeRef}
         className="flex whitespace-nowrap w-full overflow-hidden cursor-pointer"
@@ -81,7 +81,7 @@ export default function ImageMarqueeCarousel() {
       >
         <div className="flex space-x-10 min-w-max">
           {images.map((src, index) => (
-            <Image key={index} src={src} alt={`partner-${index}`} width={200} height={75} className="object-contain rounded-md" />
+            <Image key={index} src={src} alt={`partner-${index}`} width={200} height={75} className="object-contain rounded-md border p-3" />
           ))}
         </div>
       </div>

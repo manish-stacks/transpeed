@@ -7,7 +7,7 @@ export default function WhyChoose() {
             <div className="bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-sky-500 to-sky-900 dark:bg-grid-white/[0.05] text-white py-20 text-center">
                 <div className='grid grid-cols-1'>
 
-                    <h2 className="text-xl md:text-5xl max-[768px]:text-3xl font-bold mb-4 w-full max-[767px]:w-5xl mx-auto">Why Choose Transpeed’s <Cover className={'rounded-xl'}>Cargo</Cover>   </h2>
+                    <h2 className="text-xl md:text-5xl max-[768px]:text-3xl font-bold mb-4 w-full max-[767px]:w-5xl mx-auto"><Cover className={'rounded-xl'}>Why Choose Transpeed  Cargo</Cover>   </h2>
 
                 </div>
                 <div className="relative grid min-[992px]:grid-cols-4 min-[569px]:grid-cols-2 w-full lg:px-40 px:5">

@@ -3,6 +3,7 @@
 import React from 'react'
 import ContactUs from '@/components/ContactUs'
 import GoogleMap from '@/components/GoogleMap';
+import { MailSearch } from 'lucide-react';
 
 export default function page() {
   return (
@@ -14,22 +15,26 @@ export default function page() {
       <section className='bg-[#d3edff] py-16 px-6'>
         <div className='mail-id max-w-7xl mx-auto'>
           <div className='department-mail grid lg:grid-cols-4 md:grid-cols-2 gap-5'>
-            <div className='bg-white rounded-md text-center p-8 shadow-lg'>
-              <h3 className='font-bold text-lg text-[#0B476A]'>Management Contact Email</h3>
+            <div className='bg-white rounded-md text-center p-8 shadow-lg border-4 border-yellow-400'>
+               <div><MailSearch size={50} color="#eab308" /></div>
+              <h3 className='font-bold text-lg text-[#0B476A]'>Management Contact</h3>
               <p className='text-lg'>arpit@transpeed.in</p>
               <p className='text-lg'>anubhav@transpeed.in</p>
             </div>
-            <div className='bg-white rounded-md text-center p-8 shadow-lg'>
-              <h3 className='font-bold text-lg text-[#0B476A]'>Operations Email </h3>
+            <div className='bg-white rounded-md text-center p-8 shadow-lg border-4 border-yellow-400'>
+            <div><MailSearch size={50} color="#eab308" /></div>
+              <h3 className='font-bold text-lg text-[#0B476A]'>Operations</h3>
               <p className='text-lg'>ops@transpeed.in</p>
               <p className='text-lg'>air@transpeed.in</p>
             </div>
-            <div className='bg-white rounded-md text-center p-8  shadow-lg'>
+            <div className='bg-white rounded-md text-center p-8  shadow-lg border-4 border-yellow-400'>
+            <div><MailSearch size={50} color="#eab308" /></div>
               <h3 className='font-bold text-lg text-[#0B476A]'>Sales</h3>
               <p className='text-lg'>sales@transpeed.in</p>
               <p className='text-lg'>overseas@transpeed.in</p>
             </div>
-            <div className='bg-white rounded-md text-center p-8  shadow-lg'>
+            <div className='bg-white rounded-md text-center p-8  shadow-lg border-4 border-yellow-400'>
+            <div><MailSearch size={50} color="#eab308" /></div>
               <h3 className='font-bold text-lg text-[#0B476A]'>Accounts & Finance </h3>
               <p className='text-lg'>accounts@transpeed.in</p>
               {/* <p className='text-lg'>anubhav@transpeed.in</p> */}

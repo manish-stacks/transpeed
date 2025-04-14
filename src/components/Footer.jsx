@@ -30,7 +30,7 @@ const Footer = () => {
     {
       title: "Useful Links",
       linksTitle: ["Home", "About Us", "Industries", "News & Insights", "Contact Us"],
-      links: ["/", "/about-us", "/industry-solution", "/contact-us"],
+      links: ["/", "/about-us", "/industry-solution", "#", "/contact-us"],
     },
     {
       title: "Logistics Services",
@@ -39,8 +39,8 @@ const Footer = () => {
     },
     {
       title: "Support",
-      linksTitle: ["Privacy Policy", "Terms & Conditions", "Blog", "FAQs"],
-      links: ["/privacy-policy", "/terms-and-conditions", "", "/faqs"],
+      linksTitle: ["Privacy Policy", "Terms & Conditions", "FAQs"],
+      links: ["/privacy-policy", "/terms-and-conditions", "/faqs"],
     },
   ];
 

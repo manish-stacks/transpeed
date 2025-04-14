@@ -223,7 +223,7 @@ function FAQPage() {
                                     </div>
                                     <div>
                                         <h3 className="font-medium text-gray-900">Call us</h3>
-                                        <p className="text-gray-600 text-sm">+91-9354382988 (Mon-Fri, 9am-6pm)</p>
+                                        <p className="text-gray-600 text-sm">+91-9354382988</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">

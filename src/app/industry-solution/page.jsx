@@ -307,75 +307,9 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                {/* <div className="absolute bottom-10 left-0 right-0 flex justify-center">
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 1, duration: 0.8 }}
-                        className="animate-bounce"
-                    >
-                        <ArrowDown className="w-9 h-9 text-gray-100" />
-                    </motion.div>
-                </div> */}
+
             </section>
 
-
-            {/* Industry Overview */}
-            {/* <section className="py-20 relative bg-gray-50">
-                <div className="container mx-auto px-4">
-                    <motion.h2
-                        initial={{ opacity: 0, y: 10 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1 }}
-                        className="text-4xl md:text-5xl font-bold text-center mb-16"
-                    >
-                        Industry <Cover className={'text-white'}>Solutions</Cover>
-                    </motion.h2>
-
-                    <div className="max-w-7xl grid grid-cols- mx-auto">
-                        {industries.map((industry, index) => (
-                            <motion.div
-                                key={industry.id}
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-100px" }}
-                                transition={{ duration: 0.6, delay: index * 0.1 }}
-                                className={`mb-16 rounded-2xl overflow-hidden shadow-lg ${industry.bgColor}`}
-                            >
-                                <div className="p-8 md:p-12">
-                                    <div className={`flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : ''} gap-8`}>
-                                        <div className="md:w-2/4 flex justify-center items-start">
-                                            <img
-                                                src={industry.image}
-                                                alt={industry.title}
-                                                className="w-full h-full md:h-[400px] object-cover rounded-lg shadow-md"
-                                            />
-                                        </div>
-                                        <div className="md:w-3/4">
-                                            <h3 className="text-3xl font-bold mb-4 text-gray-800">{industry.title}</h3>
-                                            <p className="text-gray-700 mb-6 text-lg">{industry.description}</p>
-                                            <h4 className="text-xl font-semibold mb-4 text-gray-800">Our Solutions:</h4>
-                                            <div className="grid md:grid-cols-2 gap-4">
-                                                {industry.solutions.map((solution, idx) => (
-                                                    <div
-                                                        key={idx}
-                                                        className="flex items-start gap-2 bg-white p-4 rounded-lg shadow-sm border border-gray-100"
-                                                    >
-                                                        <span className="text-emerald-500 mt-1 font-bold">✓</span>
-                                                        <span className="text-gray-700">{solution}</span>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-
-                </div>
-            </section> */}
             <section ref={sectionRef} className="py-5 md:py-20 relative overflow-hidden">
                 <motion.div
                     className="absolute inset-0 bg-gradient-to-b from-blue-50 to-teal-50"
@@ -424,8 +358,7 @@ export default function Home() {
                                 whileInView={{ opacity: 1 }}
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.8 }}
-                                className="mb-5 last:mb-0"
-                            >
+                                className="mb-5 last:mb-0">
                                 <CardHoverEffect containerClassName="w-full">
                                     <div className={`rounded-2xl overflow-hidden shadow-xl border border-gray-100 bg-white`}>
                                         <div className="p-2 md:p-0">
