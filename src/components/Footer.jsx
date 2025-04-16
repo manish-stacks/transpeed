@@ -64,7 +64,7 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex space-x-4 mt-4 text-gray-100">
             {socialLinks.map((item, index) => (
-              <a key={index} href={item.href} className="cursor-pointer text-2xl bg-[#01385e] w-[30px] h-[30px] p-2 hover:text-yellow-500 rounded-full flex items-center justify-center">
+              <a key={index} href={item.href} target="_blank" className="cursor-pointer text-2xl bg-[#01385e] w-[30px] h-[30px] p-2 hover:text-yellow-500 rounded-full flex items-center justify-center">
                 {item.icon}
               </a>
             ))}
