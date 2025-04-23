@@ -343,11 +343,11 @@ export default function Home() {
                         <h2 className="text-3xl lg:text-5xl font-bold mb-6">
                             Industry Solutions
                         </h2>
+                        <p className="text-lg">Tailored logistics expertise for every sector, ensuring your specific needs are met with precision and
+                        care.</p>
 
-                        <TextReveal className="max-w-2xl mx-auto text-gray-900 text-lg">
-                            Tailored logistics expertise for every sector, ensuring your specific needs are met with precision and
-                            care.
-                        </TextReveal>
+                        {/* <TextReveal className="max-w-1xl mx-auto text-gray-900 text-lg text-balance">                         
+                        </TextReveal> */}
                     </div>
 
                     <div className="max-w-7xl mx-auto">

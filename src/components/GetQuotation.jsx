@@ -10,6 +10,7 @@ function App() {
         height: ''
     });
 
+
     const calculateCBM = () => {
         if (dimensions.width && dimensions.length && dimensions.height) {
             return (parseFloat(dimensions.width) * parseFloat(dimensions.length) * parseFloat(dimensions.height)).toFixed(2);
@@ -52,9 +53,9 @@ function App() {
                         <div className="flex justify-center relative">
                             <div className="absolute text-center">
                                 <div className='pt-10'>
-                                <img src="/images/product-weight.webp"
-                                    alt="Box Dimensions"
-                                    className="w-full max-w-md opacity-100"/>
+                                    <img src="/images/product-weight.webp"
+                                        alt="Box Dimensions"
+                                        className="w-full max-w-md opacity-100" />
 
                                 </div>
                             </div>
@@ -62,104 +63,300 @@ function App() {
                     </div>
 
                     {/* Right Side - Form */}
-                    <div className="space-y-6">
-                        {/* Import/Export Tabs */}
-                        <div className="grid grid-cols-2 gap-2 bg-gray-100 p-1 rounded">
-                            <button className="flex items-center justify-center space-x-2 bg-yellow-500 text-white py-3 rounded">
-                                <ArrowLeftIcon size={20} />
-                                <span>LCL Import</span>
-                            </button>
-                            <button className="flex items-center justify-center space-x-2 bg-white text-[#121a46] py-3 rounded">
-                                <span>LCL Export</span>
-                                <ArrowRightIcon size={20} />
-                            </button>
-                        </div>
 
-                        {/* Additional Options */}
-                        {/* <div className="space-y-2">
-                            <div className="bg-gray-200 p-3 rounded flex justify-between items-center">
-                                <span>Ex-work</span>
-                                <HelpCircle size={20} className="text-gray-600" />
+                    {selectedTab === 'lcl' && (
+                        <div className="space-y-6">
+                            {/* Import/Export Tabs */}
+                            <div className="grid grid-cols-2 gap-2 bg-gray-100 p-1 rounded">
+                                <button className="flex items-center justify-center space-x-2 bg-yellow-500 text-white py-3 rounded">
+                                    <ArrowLeftIcon size={20} />
+                                    <span>LCL Import</span>
+                                </button>
+                                <button className="flex items-center justify-center space-x-2 bg-white text-[#121a46] py-3 rounded">
+                                    <span>LCL Export</span>
+                                    <ArrowRightIcon size={20} />
+                                </button>
                             </div>
-                            <div className="grid grid-cols-2 gap-2">
+
+                            {/* Additional Options */}
+                            {/* <div className="space-y-2">
                                 <div className="bg-gray-200 p-3 rounded flex justify-between items-center">
-                                <span>Non-Stackable</span>
-                                <HelpCircle size={20} className="text-gray-600" />
+                                    <span>Ex-work</span>
+                                    <HelpCircle size={20} className="text-gray-600" />
                                 </div>
-                                <div className="bg-gray-200 p-3 rounded flex justify-between items-center">
-                                <span>Haz/DG Cargo</span>
-                                <HelpCircle size={20} className="text-gray-600" />
+                                <div className="grid grid-cols-2 gap-2">
+                                    <div className="bg-gray-200 p-3 rounded flex justify-between items-center">
+                                        <span>Non-Stackable</span>
+                                        <HelpCircle size={20} className="text-gray-600" />
+                                    </div>
+                                    <div className="bg-gray-200 p-3 rounded flex justify-between items-center">
+                                        <span>Haz/DG Cargo</span>
+                                        <HelpCircle size={20} className="text-gray-600" />
+                                    </div>
                                 </div>
-                            </div>
                             </div> */}
 
-                        {/* Port Selection */}
-                        <div className="grid grid-cols-2 gap-4">
-                            <div>
-                                <label className="block text-[#1e3a8a] mb-2">Port of Origin</label>
-                                <select className="w-full p-3 bg-gray-200 rounded">
-                                    <option>Select Origin</option>
-                                </select>
+                            {/* Port Selection */}
+                            <div className="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-[#1e3a8a] mb-2">Port of Origin</label>
+                                    <input type="text" placeholder="Port of Origin" className="w-full p-2 border rounded-md" />
+                                </div>
+                                <div>
+                                    <label className="block text-[#1e3a8a] mb-2">Port of Destination</label>
+                                    <input type="text" placeholder="Port of Destination" className="w-full p-2 border rounded-md" />
+                                </div>
                             </div>
-                            <div>
-                                <label className="block text-[#1e3a8a] mb-2">Port of Destination</label>
-                                <select className="w-full p-3 bg-gray-200 rounded">
-                                    <option>Select Destination</option>
-                                </select>
-                            </div>
-                        </div>
 
-                        {/* Dimensions */}
-                        <div className="space-y-4">
-                            <div className="flex items-center space-x-2">
-                                <label className="w-24 text-[#1e3a8a]">Weight:</label>
-                                <input
-                                    type="number"
-                                    className="flex-1 p-2 border rounded"
-                                    value={dimensions.weight}
-                                    onChange={(e) => setDimensions({ ...dimensions, weight: e.target.value })}
-                                />
-                                <select className="w-20 p-2 bg-gray-200 rounded">
-                                    <option>Kg</option>
-                                </select>
-                            </div>
-                            {['width', 'length', 'height'].map((dim) => (
-                                <div key={dim} className="flex items-center space-x-2">
-                                    <label className="w-24 text-[#1e3a8a] capitalize">{dim}:</label>
+                            {/* Dimensions */}
+                            <div className="space-y-4">
+                                <div className="flex items-center space-x-2">
+                                    <label className="w-24 text-[#1e3a8a]">Weight:</label>
                                     <input
                                         type="number"
                                         className="flex-1 p-2 border rounded"
-                                        value={dimensions[dim]}
-                                        onChange={(e) => setDimensions({ ...dimensions, [dim]: e.target.value })}
+                                        value={dimensions.weight}
+                                        onChange={(e) => setDimensions({ ...dimensions, weight: e.target.value })}
                                     />
                                     <select className="w-20 p-2 bg-gray-200 rounded">
-                                        <option>m</option>
+                                        <option>kg</option>
                                     </select>
                                 </div>
-                            ))}
-                        </div>
+                                {['width', 'length', 'height'].map((dim) => (
+                                    <div key={dim} className="flex items-center space-x-2">
+                                        <label className="w-24 text-[#1e3a8a] capitalize">{dim}:</label>
+                                        <input
+                                            type="number"
+                                            className="flex-1 p-2 border rounded"
+                                            value={dimensions[dim]}
+                                            onChange={(e) => setDimensions({ ...dimensions, [dim]: e.target.value })}
+                                        />
+                                        <select className="w-20 p-2 bg-gray-200 rounded">
+                                            <option>cm</option>
+                                        </select>
+                                    </div>
+                                ))}
+                            </div>
 
-                        {/* CBM Calculation */}
-                        <div className="bg-gray-200 p-4 rounded">
-                            <div className="text-sm text-gray-600">Calculation</div>
-                            <div className="text-sm">CBM= Width*Length*Height</div>
-                            <div className="mt-2">
-                                <span className="font-bold">CBM</span>
-                                <span className="ml-4">{calculateCBM()} CBM</span>
+                            {/* CBM Calculation */}
+                            <div className="bg-gray-200 p-4 rounded">
+                                <div className="text-sm text-gray-600">Calculation</div>
+                                <div className="text-sm">CBM= Width*Length*Height</div>
+                                <div className="mt-2">
+                                    <span className="font-bold">CBM</span>
+                                    <span className="ml-4">{calculateCBM()} CBM</span>
+                                </div>
+                            </div>
+
+                            {/* Next Button */}
+                            <button className="w-full bg-yellow-500 text-white py-3 rounded flex items-center justify-center space-x-2">
+                                <span>NEXT</span>
+                                <ArrowRightIcon size={20} />
+                            </button>
+
+                            {/* Help Link */}
+                            <div className="text-center">
+                                <a href="/contact-us" className="text-[#1e3a8a] underline">Need Help? Contact Us</a>
                             </div>
                         </div>
+                    )}
+                    {/* fcl container */}
+                    {selectedTab === 'fcl' && (
+                        <div className="space-y-6">
+                            <div className="grid grid-cols-2 gap-2 bg-gray-100 p-1 rounded">
+                                <button className="flex items-center justify-center space-x-2 bg-yellow-500 text-white py-3 rounded">
+                                    <ArrowLeftIcon size={20} />
+                                    <span>FCL Import</span>
+                                </button>
+                                <button className="flex items-center justify-center space-x-2 bg-white text-[#121a46] py-3 rounded">
+                                    <span>FCL Export</span>
+                                    <ArrowRightIcon size={20} />
+                                </button>
+                            </div>
+                            <div className="grid grid-cols gap-2">
+                                <div>
+                                    <label className="block text-[#1e3a8a] mb-2">Choose Container Size</label>
+                                    <select className="w-full p-2 border rounded-md">
+                                        <option>Select Container</option>
+                                        <option>20' Standard</option>
+                                        <option>40' Standard</option>
+                                        <option>40' High-Club</option>
+                                        <option>45' High-Club</option>
+                                        <option>20' Open Top</option>
+                                        <option>40' Open Top</option>
+                                        <option>20' Flatrack</option>
+                                        <option>40' Flatrack</option>
+                                        <option>20' Flatrack Collapsible</option>
+                                        <option>40' Flatrack Collapsible</option>
+                                        <option>20' Platform</option>
+                                        <option>40' Platform</option>
+                                        <option>20' Refrigerated</option>
+                                        <option>40' Refrigerated</option>
+                                        <option>20' Bulk</option>
+                                        <option>20' Tank</option>
+                                        <option>20' Pallate Wide</option>
 
-                        {/* Next Button */}
-                        <button className="w-full bg-yellow-500 text-white py-3 rounded flex items-center justify-center space-x-2">
-                            <span>NEXT</span>
-                            <ArrowRightIcon size={20} />
-                        </button>
+                                    </select>
+                                </div>
+                            </div>
+                            <div className="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-[#1e3a8a] mb-2">Port of Origin</label>
+                                    <input type="text" placeholder="Port of Origin" className="w-full p-2 border rounded-md" />
+                                </div>
+                                <div>
+                                    <label className="block text-[#1e3a8a] mb-2">Port of Destination</label>
+                                    <input type="text" placeholder="Port of Destination" className="w-full p-2 border rounded-md" />
+                                </div>
+                            </div>
+                            <div className="space-y-4">
+                                <div className="flex items-center space-x-2">
+                                    <label className="w-24 text-[#1e3a8a]">Weight:</label>
+                                    <input
+                                        type="number"
+                                        className="flex-1 p-2 border rounded"
+                                        value={dimensions.weight}
+                                        onChange={(e) => setDimensions({ ...dimensions, weight: e.target.value })}
+                                    />
+                                    <select className="w-20 p-2 bg-gray-200 rounded">
+                                        <option>kg</option>
+                                    </select>
+                                </div>
+                                {['width'].map((dim) => (
+                                    <div key={dim} className="flex items-center space-x-2">
+                                        <label className="w-24 text-[#1e3a8a] capitalize">{dim}:</label>
+                                        <input
+                                            type="number"
+                                            className="flex-1 p-2 border rounded"
+                                            value={dimensions[dim]}
+                                            onChange={(e) => setDimensions({ ...dimensions, [dim]: e.target.value })}
+                                        />
+                                        <select className="w-20 p-2 bg-gray-200 rounded">
+                                            <option>cm</option>
+                                        </select>
+                                    </div>
+                                ))}
+                            </div>
+                            {/* CBM Calculation */}
+                            <div className="bg-gray-200 p-4 rounded">
+                                <div className="text-sm text-gray-600">Calculation</div>
+                                <div className="text-sm">CBM= Width*Length*Height</div>
+                                <div className="mt-2">
+                                    <span className="font-bold">CBM</span>
+                                    <span className="ml-4">{calculateCBM()} CBM</span>
+                                </div>
+                            </div>
 
-                        {/* Help Link */}
-                        {/* <div className="text-center">
-                            <a href="/contact-us" className="text-[#1e3a8a] underline">Need Help? Contact Us</a>
-                        </div> */}
-                    </div>
+                            {/* Next Button */}
+                            <button className="w-full bg-yellow-500 text-white py-3 rounded flex items-center justify-center space-x-2">
+                                <span>NEXT</span>
+                                <ArrowRightIcon size={20} />
+                            </button>
+
+                            {/* Help Link */}
+                            <div className="text-center">
+                                <a href="/contact-us" className="text-[#1e3a8a] underline">Need Help? Contact Us</a>
+                            </div>
+
+                        </div>
+                    )}
+                    {/* Air Freight container */}
+                    {selectedTab === 'air' && (
+                        <div className="space-y-6">
+                            {/* Import/Export Tabs */}
+                            <div className="grid grid-cols-2 gap-2 bg-gray-100 p-1 rounded">
+                                <button className="flex items-center justify-center space-x-2 bg-yellow-500 text-white py-3 rounded">
+                                    <ArrowLeftIcon size={20} />
+                                    <span>LCL Import</span>
+                                </button>
+                                <button className="flex items-center justify-center space-x-2 bg-white text-[#121a46] py-3 rounded">
+                                    <span>LCL Export</span>
+                                    <ArrowRightIcon size={20} />
+                                </button>
+                            </div>
+
+                            {/* Additional Options */}
+                            <div className="space-y-2">
+                                <div className="bg-gray-200 p-3 rounded flex justify-between items-center">
+                                    <span>Ex-work</span>
+                                    <HelpCircle size={20} className="text-gray-600" />
+                                </div>
+                                <div className="grid grid-cols-2 gap-2">
+                                    <div className="bg-gray-200 p-3 rounded flex justify-between items-center">
+                                        <span>Non-Stackable</span>
+                                        <HelpCircle size={20} className="text-gray-600" />
+                                    </div>
+                                    <div className="bg-gray-200 p-3 rounded flex justify-between items-center">
+                                        <span>Haz/DG Cargo</span>
+                                        <HelpCircle size={20} className="text-gray-600" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Port Selection */}
+                            <div className="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-[#1e3a8a] mb-2">Port of Origin</label>
+                                    <input type="text" placeholder="Port of Origin" className="w-full p-2 border rounded-md" />
+                                </div>
+                                <div>
+                                    <label className="block text-[#1e3a8a] mb-2">Port of Destination</label>
+                                    <input type="text" placeholder="Port of Destination" className="w-full p-2 border rounded-md" />
+                                </div>
+                            </div>
+
+                            {/* Dimensions */}
+                            <div className="space-y-4">
+                                <div className="flex items-center space-x-2">
+                                    <label className="w-24 text-[#1e3a8a]">Weight:</label>
+                                    <input
+                                        type="number"
+                                        className="flex-1 p-2 border rounded"
+                                        value={dimensions.weight}
+                                        onChange={(e) => setDimensions({ ...dimensions, weight: e.target.value })}
+                                    />
+                                    <select className="w-20 p-2 bg-gray-200 rounded">
+                                        <option>kg</option>
+                                    </select>
+                                </div>
+                                {['width', 'length', 'height'].map((dim) => (
+                                    <div key={dim} className="flex items-center space-x-2">
+                                        <label className="w-24 text-[#1e3a8a] capitalize">{dim}:</label>
+                                        <input
+                                            type="number"
+                                            className="flex-1 p-2 border rounded"
+                                            value={dimensions[dim]}
+                                            onChange={(e) => setDimensions({ ...dimensions, [dim]: e.target.value })}
+                                        />
+                                        <select className="w-20 p-2 bg-gray-200 rounded">
+                                            <option>cm</option>
+                                        </select>
+                                    </div>
+                                ))}
+                            </div>
+
+                            {/* CBM Calculation */}
+                            <div className="bg-gray-200 p-4 rounded">
+                                <div className="text-sm text-gray-600">Calculation</div>
+                                <div className="text-sm">CBM= Width*Length*Height</div>
+                                <div className="mt-2">
+                                    <span className="font-bold">CBM</span>
+                                    <span className="ml-4">{calculateCBM()} CBM</span>
+                                </div>
+                            </div>
+
+                            {/* Next Button */}
+                            <button className="w-full bg-yellow-500 text-white py-3 rounded flex items-center justify-center space-x-2">
+                                <span>NEXT</span>
+                                <ArrowRightIcon size={20} />
+                            </button>
+
+                            {/* Help Link */}
+                            <div className="text-center">
+                                <a href="/contact-us" className="text-[#1e3a8a] underline">Need Help? Contact Us</a>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

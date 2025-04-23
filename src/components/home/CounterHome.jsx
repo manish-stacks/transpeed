@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const counters = [
-  { label: "Metric Tones of Air Carg", endValue: 500},
+  { label: "Metric Tones of Air Cargo", endValue: 500},
   { label: "Teus", endValue: 1200 },
   { label: "International Partners", endValue: 100 },
   { label: "Happy Clients ", endValue: 500 },
