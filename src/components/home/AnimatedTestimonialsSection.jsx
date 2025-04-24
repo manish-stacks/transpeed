@@ -43,7 +43,7 @@ export function AnimatedTestimonialsSection() {
   return (
   <>
       <div className='title'>
-        <h2 class="max-w-7xl pl-4 mx-auto text-xl md:text-5xl max-[768px]:text-3xl font-bold font-sans text-center mt-14">What Our Client Say</h2>
+        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl max-[768px]:text-3xl font-bold font-sans text-center mt-14">What Our Client Say</h2>
       </div>
      <AnimatedTestimonials testimonials={testimonials} />
   </>

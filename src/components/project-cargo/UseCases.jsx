@@ -150,19 +150,19 @@ function UseCases() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex items-center space-x-4">
                 <CheckCircle2 className="w-6 h-6 text-yellow-500 flex-shrink-0" />
-                <span class="text-gray-50">Comprehensive feasibility studies</span>
+                <span className="text-gray-50">Comprehensive feasibility studies</span>
               </div>
               <div className="flex items-center space-x-4">
                 <CheckCircle2 className="w-6 h-6 text-yellow-500 flex-shrink-0" />
-                <span class="text-gray-50">Strategic route planning</span>
+                <span className="text-gray-50">Strategic route planning</span>
               </div>
               <div className="flex items-center space-x-4">
                 <CheckCircle2 className="w-6 h-6 text-yellow-500 flex-shrink-0" />
-                <span class="text-gray-50">Permit acquisition</span>
+                <span className="text-gray-50">Permit acquisition</span>
               </div>
               <div className="flex items-center space-x-4">
                 <CheckCircle2 className="w-6 h-6 text-yellow-500 flex-shrink-0" />
-                <span class="text-gray-50">Specialized equipment arrangement</span>
+                <span className="text-gray-50">Specialized equipment arrangement</span>
               </div>
             </div>
           </div>

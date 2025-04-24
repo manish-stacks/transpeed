@@ -5,7 +5,7 @@ export default function CoreAdvantage() {
         <>
             <section className='mt-10 mb-20'>
                 <div className="w-full md:px-44 px-10 max-[768px]:px-5 space-y-5">
-                    <div class="grid grid-cols-1 gap-4 text-center">
+                    <div className="grid grid-cols-1 gap-4 text-center">
                         <div>
                           <h4 className='text-yellow-500 p-3 text-xl'>Core Advantage</h4>
                           <h2 className='max-w-7xl pl-4 mx-auto text-xl md:text-5xl max-[768px]:text-3xl font-bold font-sans text-center mb-10'>Get the Global Logistics Advantage</h2>

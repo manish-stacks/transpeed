@@ -87,8 +87,8 @@ export default function MoresSrvices() {
 
             <div className="min-h-screen bg-gradient-to-r from-[#01385e] to-[#168cbd] text-white">
                 <div className="w-full grid mx-auto px-50">
-                    <h2 class="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold font-sans text-center mb-5">More Servces</h2>
-                    <p class="text-lg text-white font-normal mb-6 mx-auto text-center">We are focus on international sea freight and airfreight business and integrating trucking, Customs clearance<br />and warehousing into a large-sized modern logistics enterprise.</p>
+                    <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold font-sans text-center mb-5">More Servces</h2>
+                    <p className="text-lg text-white font-normal mb-6 mx-auto text-center">We are focus on international sea freight and airfreight business and integrating trucking, Customs clearance<br />and warehousing into a large-sized modern logistics enterprise.</p>
                 </div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
                     <div className="grid lg:grid-cols-2 gap-8">
