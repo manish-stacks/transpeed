@@ -59,8 +59,8 @@ export default function About() {
       <section className="mt-20 mb-20">
         <div className="w-full max-auto xl:px-52 lg:px-10 md:px-10 px-5 grid grid-cols-1 md:grid-cols-2 items-center">
           <div className="pr-0 md:pr-5">
-            <div class="title">
-              <h2 class="max-w-7xl mx-auto text-3xl md:text-5xl font-bold font-sans mb-10 text-center md:text-start">About Transpeed Cargo</h2>
+            <div className="title">
+              <h2 className="max-w-7xl mx-auto text-3xl md:text-5xl font-bold font-sans mb-10 text-center md:text-start">About Transpeed Cargo</h2>
               <p className="text-justify">Transpeed Cargo Pvt Ltd is India &lsquo; s one of the top logistics solutions provider. Established in 2016 with the vision to provide Easy, Efficient and Economical integrated logistics solutions, Transpeed Cargo Pvt Ltd today is a reflection of it&lsquo;s founder&lsquo;s passion for innovative services and belief in ethical business practices, where continuous emphasis is placed on delivering the highest standards of customer satisfaction. The founder with their experience in various import/export, sales and managerial positions focused to provide innovative, focused customer oriented solutions to the consolidation and freight forwarding industry.</p>
               <p className='text-justify'>Transpeed Cargo Pvt Ltd has a menu of supply chain solutions that can optimize the effectiveness of your product promotion, and reduce the cost of your packaging and distribution as well as your carbon footprint. “Sales Lift” is music to any marketing, brand or merchandising manager&lsquo;s ears. Transpeed Cargo Pvt Ltd understands the impact packaging has when your customers are competing for market dollars.</p>
               <p className='text-justify'>Transpeed Cargo Pvt Ltd is taking optimization to a whole new level. It has evolved into a comprehensive, fully integrated program designed to maximize productivity, minimize waste, and above all your product promotion, and reduce the cost of your packaging and distribution as well as your carbon footprint.</p>

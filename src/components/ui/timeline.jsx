@@ -29,8 +29,8 @@ export const Timeline = ({
       className="w-full bg-gradient-to-r from-[#01385e] to-[#168cbd] dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 class="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold font-sans text-center mb-5">More Servces</h2>
-        <p class="text-lg text-white font-normal mb-6 mx-auto text-center">We are focus on international sea freight and airfreight business and integrating trucking, Customs clearance<br />and warehousing into a large-sized modern logistics enterprise.</p>
+        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold font-sans text-center mb-5">More Servces</h2>
+        <p className="text-lg text-white font-normal mb-6 mx-auto text-center">We are focus on international sea freight and airfreight business and integrating trucking, Customs clearance<br />and warehousing into a large-sized modern logistics enterprise.</p>
 
       </div>
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

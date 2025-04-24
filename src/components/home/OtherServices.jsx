@@ -38,7 +38,7 @@ export default function OtherServices() {
     <div className="bg-[#d3edff] py-16 px-6">
 
       <div className='title'>
-        <h2 class="max-w-7xl pl-4 mx-auto text-xl md:text-5xl max-[768px]:text-3xl font-bold font-sans text-center mb-10">More Services</h2>
+        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl max-[768px]:text-3xl font-bold font-sans text-center mb-10">More Services</h2>
       </div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-8">
         {infoData.map((item, index) => (
