@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Lcl from "./quotation/lcl";
+import Lcl from "./quotation/Lcl";
 import Fcl from "./quotation/Fcl";
 import Air from "./quotation/Air";
 
