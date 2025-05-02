@@ -50,9 +50,14 @@ export async function POST(request) {
         { label: "Origin", value: data.origin },
         { label: "Destination", value: data.destination },
         {
-          label: data.serviceTab == "fcl" ? "Dimensions (W×V)" :"Dimensions (L×W×H)",
-          value: data.serviceTab == "fcl" ? `${data.weight}×${data.volume}`: `${data.length}×${data.width}×${data.height}`,
-        },
+          label: data.serviceTab === "fcl"
+            ? "Dimensions (W × V)"
+            : "Dimensions ((L × W × H) / 1,000,000) × No. of Boxes",
+        
+          value: data.serviceTab === "fcl"
+            ? `${data.weight} × ${data.volume}`
+            : `((${data.length} × ${data.width} × ${data.height}) / 1,000,000) × ${data.noOfBoxes}`,
+        },        
         { label: "Weight", value: data.weight ? `${data.weight} kg` : null },
         { label: "CBM", value: data.CBM },
         { label: "Incoterm", value: data.incoTerm },

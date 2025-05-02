@@ -16,6 +16,7 @@ const Air = ({ incoterms, isformOpen, setIsFormOpen, selectedTab }) => {
     length: "",
     height: "",
     CBM: "0",
+    noOfBoxes: "",
   });
 
   const handleInputChange = (e) => {
@@ -23,23 +24,24 @@ const Air = ({ incoterms, isformOpen, setIsFormOpen, selectedTab }) => {
     setFormData((prev) => {
       const newData = { ...prev, [name]: value };
       // Recalculate CBM when dimensions change
-      if (["width", "length", "height"].includes(name)) {
+      if (["width", "length", "height", "noOfBoxes"].includes(name)) {
         newData.CBM = calculateCBM(
           newData.width,
           newData.length,
-          newData.height
+          newData.height,
+          newData.noOfBoxes
         ).toString();
       }
       return newData;
     });
   };
 
-  const calculateCBM = (width, length, height) => {
-    if (width && length && height) {
+  const calculateCBM = (width, length, height, noOfBoxes) => {
+    if (width && length && height && noOfBoxes) {
       return (
-        parseFloat(width) *
-        parseFloat(length) *
-        parseFloat(height)
+        ((parseFloat(width) * parseFloat(length) * parseFloat(height)) /
+          1000000) *
+        parseFloat(noOfBoxes)
       ).toFixed(2);
     }
     return 0;
@@ -190,12 +192,22 @@ const Air = ({ incoterms, isformOpen, setIsFormOpen, selectedTab }) => {
                   </select>
                 </div>
               ))}
+              <div className="flex items-center space-x-2">
+                <label className="w-24 text-[#1e3a8a]">No of Boxes:</label>
+                <input
+                  name="noOfBoxes"
+                  type="number"
+                  value={formData.noOfBoxes}
+                  onChange={handleInputChange}
+                  className="flex-1 p-2 border rounded"
+                />
+              </div>
             </div>
 
             {/* CBM Calculation */}
             <div className="bg-gray-200 p-4 rounded">
               <div className="text-sm text-gray-600">Calculation</div>
-              <div className="text-sm">CBM= Width*Length*Height</div>
+              <div className="text-sm">CBM= (Width*Length*Height)/1000000</div>
               <div className="mt-2">
                 <span className="font-bold">CBM</span>
                 <span className="ml-4">{formData.CBM} CBM</span>

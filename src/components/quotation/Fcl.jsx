@@ -32,27 +32,17 @@ const Fcl = ({ incoterms, isformOpen, setIsFormOpen, selectedTab }) => {
     destination: "",
     weight: "",
     volume: "",
-    CBM: "0",
+    
   });
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => {
       const newData = { ...prev, [name]: value };
-      // Recalculate CBM when dimensions change
-      if (["weight", "volume"].includes(name)) {
-        newData.CBM = calculateCBM(newData.weight, newData.volume).toString();
-      }
       return newData;
     });
   };
 
-  const calculateCBM = (weight, volume) => {
-    if (weight && volume) {
-      return (parseFloat(weight) * parseFloat(volume)).toFixed(2);
-    }
-    return 0;
-  };
 
   // Update serviceType when import/export changes
   const handleServiceTypeChange = (isImport) => {
@@ -200,15 +190,7 @@ const Fcl = ({ incoterms, isformOpen, setIsFormOpen, selectedTab }) => {
                 </div>
               ))}
             </div>
-            {/* CBM Calculation */}
-            <div className="bg-gray-200 p-4 rounded">
-              <div className="text-sm text-gray-600">Calculation</div>
-              <div className="text-sm">CBM= Width*Volume</div>
-              <div className="mt-2">
-                <span className="font-bold">CBM</span>
-                <span className="ml-4">{formData.CBM} CBM</span>
-              </div>
-            </div>
+           
 
             {/* Next Button */}
             <button
