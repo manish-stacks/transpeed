@@ -9,7 +9,7 @@ const Page = () => {
                 Air Craft Specification
             </h1>
             
-            {/* <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
                 {container.conatiners.map((item, index) => (
                     <div 
                         key={index} 
@@ -27,7 +27,7 @@ const Page = () => {
                         </h2>
                     </div>
                 ))}
-            </div> */}
+            </div>
         </div>
     );
 };
