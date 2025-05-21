@@ -1,8 +1,6 @@
 
-import Header from "@/components/Header";
 import "./globals.css";
-import Footer from "@/components/Footer";
-
+import MainLayout from "@/components/MainLayout";
 
 export const metadata = {
   title: "Transpeed Cargo",
@@ -12,14 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      
       <body>
-        <main className="min-h-screen relative overflow-hidden">
-          <Header />
-          {children}
-          <Footer />
-        </main>
-        </body>
-    </html >
+        <MainLayout>
+            {children}
+        </MainLayout>
+      </body>
+    </html>
   );
 }
