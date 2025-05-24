@@ -109,7 +109,7 @@ const BlogPostPage = () => {
                 <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                   Supply chain management has evolved dramatically over the past
                   decade, with technology playing an increasingly critical role
-                  in optimizing operations and improving efficiency. In today's
+                  in optimizing operations and improving efficiency. In todays
                   interconnected global economy, businesses must navigate
                   complex networks of suppliers, manufacturers, and distributors
                   to deliver products to customers effectively.
@@ -127,7 +127,7 @@ const BlogPostPage = () => {
                 {/* Quote Block */}
                 <blockquote className="bg-blue-50 border-l-4 border-blue-600 p-6 my-8 rounded-r-lg">
                   <p className="text-lg font-medium text-gray-900 mb-2">
-                    "Logistics is the ball and chain of retailer existence."
+                    Logistics is the ball and chain of retailer existence.
                   </p>
                   <p className="text-gray-600 italic">— Warren Buffett</p>
                   <cite className="text-sm text-gray-500 block mt-2">

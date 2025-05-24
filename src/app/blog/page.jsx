@@ -122,23 +122,6 @@ const BlogCategoryPage = () => {
                     priority
                 
                 />
-
-                {/* Floating Stats Cards */}
-                {/* <div className="absolute inset-0 flex flex-col justify-center items-end pr-8 space-y-4">
-                  {featuredArticle.stats.map((stat, index) => (
-                    <div
-                      key={index}
-                      className="bg-white rounded-lg shadow-lg p-4 min-w-[120px] transform hover:scale-105 transition-transform"
-                    >
-                      <div className="text-xs text-gray-500 mb-1">
-                        {stat.label}
-                      </div>
-                      <div className={`text-2xl font-bold ${stat.color}`}>
-                        {stat.value}
-                      </div>
-                    </div>
-                  ))}
-                </div> */}
               </div>
             </div>
             {/* right Content */}
@@ -184,14 +167,6 @@ const BlogCategoryPage = () => {
             </p>
           </div>
 
-          {/* <div className="flex items-center space-x-2">
-            <button className="p-2 rounded-full border border-gray-200 hover:bg-gray-50 transition-colors">
-              <ChevronLeft className="w-5 h-5 text-gray-600" />
-            </button>
-            <button className="p-2 rounded-full border border-gray-200 hover:bg-gray-50 transition-colors">
-              <ChevronRight className="w-5 h-5 text-gray-600" />
-            </button>
-          </div> */}
         </div>
 
         {/* Articles Grid */}
