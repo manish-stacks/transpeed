@@ -5,7 +5,7 @@ import React from 'react';
 const Page = () => {
     return (
         <div className='max-w-7xl mx-auto min-h-screen px-4 py-10 mt-20 mb-32'> 
-            <h1 className='text-3xl md:text-4xl font-semibold text-center text-slate-900 mb-8'>
+            <h1 className='text-3xl md:text-4xl font-bold text-center text-slate-900 mb-8'>
                 Container Dimensions
             </h1>
             
