@@ -25,11 +25,11 @@ const navigation = [
       { label: "Blogs", path: "/admin/blogs" },
     ],
   },
-  { icon: Calendar, label: "Pages", path: "/admin/pages" },
-  { icon: Users, label: "Enquiries", path: "/admin/enquiries" },
+  // { icon: Calendar, label: "Pages", path: "/admin/pages" },
+  // { icon: Users, label: "Enquiries", path: "/admin/enquiries" },
   //   { icon: MessageSquare, label: "Schedule Timings", path: "/admin/schedule" },
-  { icon: Bell, label: "Media / Gallery", path: "/admin/media" },
-  { icon: User, label: "My Profile", path: "/admin/profile" },
+  // { icon: Bell, label: "Media / Gallery", path: "/admin/media" },
+  // { icon: User, label: "My Profile", path: "/admin/profile" },
   { icon: Settings, label: "Settings", path: "/admin/settings" },
 ];
 

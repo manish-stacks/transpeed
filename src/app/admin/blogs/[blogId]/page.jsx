@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import { getBlogById } from "@/lib/data-utils";
 import Heading from "@/components/shared/heading";
 import BlogForm from "@/components/admin/blog/blog-form";
+import axios from "axios";
 
 export default function EditBlogPage() {
   const params = useParams();
@@ -14,8 +15,9 @@ export default function EditBlogPage() {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const data = await getBlogById(params.blogId);
-        setBlog(data);
+        // const data = await getBlogById(params.blogId);
+        const response = await axios.get(`/api/blogs/${params.blogId}`);
+        setBlog(response.data);
       } catch (error) {
         console.error("Failed to fetch blog:", error);
       } finally {

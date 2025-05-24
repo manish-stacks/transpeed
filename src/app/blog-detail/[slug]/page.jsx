@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Search,
   Calendar,
@@ -12,15 +12,51 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 const img1 = "/images/logistic_banner1.png";
+import { useParams } from "next/navigation";
+import axios from "axios";
 
 const BlogPostPage = () => {
-  const categories = [
-    { name: "Consulting", count: 24 },
-    { name: "Finance", count: 18 },
-    { name: "Business", count: 15 },
-    { name: "Technology", count: 12 },
-    { name: "Management Info", count: 8 },
-  ];
+  const params = useParams();
+  const [blog, setBlog] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (!params?.slug) return;
+
+    const fetchBlog = async () => {
+      try {
+        console.log("Fetching blog...");
+        setLoading(true);
+
+        const [blogRes, catRes] = await Promise.all([
+          axios.get(`/api/blogs/${params.slug}`),
+          axios.get("/api/blogs-category"),
+        ]);
+        console.log("Blog and categories fetched successfully", catRes);
+
+        setBlog(blogRes.data);
+        setCategories(catRes.data);
+      } catch (error) {
+        console.error("Failed to fetch blog or categories:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlog();
+  }, [params?.slug]);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <p>Loading...</p>
+      </div>
+    );
+  }
+
+  console.log("blog", blog);
+  console.log("categories", categories);
 
   const recentPosts = [
     {
@@ -307,7 +343,7 @@ const BlogPostPage = () => {
                       {category.name}
                     </span>
                     <span className="text-gray-400 text-sm">
-                      ({category.count})
+                      ({category?.count || 0})
                     </span>
                   </div>
                 ))}

@@ -64,7 +64,7 @@ export default function ImageUpload({ value, onChange, disabled }) {
         {preview ? (
           <div className="relative aspect-video w-full">
             <img
-              src={preview}
+              src={preview.url || preview}
               alt="Preview"
               className="object-cover w-full h-full"
             />
@@ -89,7 +89,7 @@ export default function ImageUpload({ value, onChange, disabled }) {
         <input
           type="text"
           placeholder="Enter image URL"
-          value={preview.startsWith("blob:") ? "" : preview}
+          value={preview ? "" : preview}
           onChange={handleUrlChange}
           disabled={disabled}
           className="w-full border px-3 py-2 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100"

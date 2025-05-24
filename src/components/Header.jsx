@@ -79,7 +79,7 @@ export default function Header() {
                         </div>
 
                         <Link href="/industry-solution" className="text-white hover:text-blue-200">Industries</Link>
-                        <Link href="#" className="text-white hover:text-blue-200">News & Insights</Link>
+                        <Link href="/blogs" className="text-white hover:text-blue-200">News & Insights</Link>
 
                         <div className="relative group">
                             <button className="text-white hover:text-blue-200 flex items-center space-x-1">

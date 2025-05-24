@@ -21,7 +21,7 @@ const formSchema = z.object({
   category: z.string(),
   status: z.enum(["published", "draft"]),
   featured: z.boolean().default(false),
-  image: z.string(),
+  image: z.string().optional(),
   metaTitle: z.string().max(60).optional(),
   metaDescription: z.string().max(160).optional(),
   metaKeywords: z.string().optional(),
