@@ -31,6 +31,13 @@ export const authOptions = {
   pages: {
     signIn: "/login",
   },
+  session: {
+    strategy: "jwt",
+    maxAge: 7 * 24 * 60 * 60,
+  },
+  jwt: {
+    maxAge: 7 * 24 * 60 * 60,
+  },
   callbacks: {
     async jwt({ token, user }) {
       if (user) {
@@ -40,7 +47,7 @@ export const authOptions = {
     },
     async session({ session, token }) {
       session.user.role = token.role;
-    //   console.log('session', session);
+      //   console.log('session', session);
       return session;
     },
     async redirect({ url, baseUrl }) {
@@ -49,7 +56,6 @@ export const authOptions = {
   },
   secret: process.env.NEXTAUTH_SECRET,
 };
-
 
 const handler = NextAuth(authOptions);
 

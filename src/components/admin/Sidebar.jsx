@@ -7,6 +7,7 @@ import {
   LogOut,
   Settings,
   User,
+  Users,
   X,
 } from "lucide-react";
 
@@ -15,7 +16,7 @@ import { usePathname } from "next/navigation";
 
 const navigation = [
   { icon: LayoutDashboard, label: "Dashboard", path: "/admin/dashboard" },
-  
+
   {
     icon: FileText,
     label: "BlogsNews & Insights",
@@ -25,8 +26,8 @@ const navigation = [
     ],
   },
   { icon: Calendar, label: "Pages", path: "/admin/pages" },
-//   { icon: Users, label: "Patients", path: "/admin/patients" },
-//   { icon: MessageSquare, label: "Schedule Timings", path: "/admin/schedule" },
+  { icon: Users, label: "Enquiries", path: "/admin/enquiries" },
+  //   { icon: MessageSquare, label: "Schedule Timings", path: "/admin/schedule" },
   { icon: Bell, label: "Media / Gallery", path: "/admin/media" },
   { icon: User, label: "My Profile", path: "/admin/profile" },
   { icon: Settings, label: "Settings", path: "/admin/settings" },
@@ -43,7 +44,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, logout }) => {
       >
         <div className="h-16 flex items-center justify-between px-4 shadow-sm">
           <div className="text-2xl font-bold text-indigo-900">
-            <span className="text-indigo-900 tracking-wider">MediDash</span>
+            <span className="text-indigo-900 tracking-wider">Admin Panel</span>
           </div>
           <button className="lg:hidden" onClick={() => setSidebarOpen(false)}>
             <X className="h-6 w-6" />
@@ -115,7 +116,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen, logout }) => {
         <div className="absolute bottom-0 left-0 right-0 p-6">
           <button
             onClick={() => logout()}
-            className="flex items-center px-6 py-3 text-sm font-medium text-gray-600 hover:text-indigo-600 hover:bg-gray-50 w-full"
+            className="flex items-center px-6 py-3 text-sm font-medium bg-rose-100 text-rose-600 rounded-md hover:text-indigo-600 hover:bg-gray-50 w-full"
           >
             <LogOut className="w-5 h-5 mr-3" />
             Logout

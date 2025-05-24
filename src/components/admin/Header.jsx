@@ -90,8 +90,8 @@ const Header = ({
               <Image
                 width={32}
                 height={32}
-                src={userData?.image}
-                alt="Doctor profile"
+                src={userData?.image || "/images/default-avatar.png"}
+                alt="profile"
                 className="h-8 w-8 rounded-full object-cover ring-2 ring-white"
               />
               <div className="hidden md:flex items-center">

@@ -1,20 +1,35 @@
 import { useState, useRef, useEffect } from "react";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
-import { getServerSession } from "next-auth";
-import { redirect } from "next/navigation";
-import Sidebar from "./Sidebar";
-import Header from "./Header";
+// import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+// import { getServerSession } from "next-auth";
+import { redirect, useRouter } from "next/navigation";
+import Sidebar from "../../components/admin/Sidebar";
+import Header from "../../components/admin/Header";
+import { useSession } from "next-auth/react";
+import { Toaster } from "sonner";
 
 export default function Layout({ children }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [profileDropdownOpen, setProfileDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
   const [userdata, setUserData] = useState();
+  const { data: session, status } = useSession();
+  const router = useRouter();
+  // console.log(session);
 
-  //   const session = await getServerSession(authOptions);
-  //   if (!session) {
-  //     redirect("/login");
-  //   }
+  useEffect(() => {
+    if (status === "loading") return;
+    if (!session) {
+      router.push("/login");
+    } else {
+      setUserData(session.user);
+    }
+  }, [session, status, router]);
+
+  // use the code below if you want to use server session in backend
+  //     const session = await getServerSession(authOptions);
+  //     if (!session) {
+  //       redirect("/login");
+  //     }
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -31,6 +46,7 @@ export default function Layout({ children }) {
   };
   return (
     <div className="h-screen flex overflow-hidden bg-gray-100">
+      <Toaster />
       {/* Mobile sidebar backdrop */}
       {sidebarOpen && (
         <div
