@@ -30,7 +30,7 @@ const Footer = () => {
     {
       title: "Useful Links",
       linksTitle: ["Home", "About Us", "Industries", "News & Insights", "Contact Us"],
-      links: ["/", "/about-us", "/industry-solution", "#", "/contact-us"],
+      links: ["/", "/about-us", "/industry-solution", "/blog", "/contact-us"],
     },
     {
       title: "Logistics Services",
