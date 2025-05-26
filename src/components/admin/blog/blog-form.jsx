@@ -8,7 +8,13 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "sonner";
 import ImageUpload from "@/components/shared/image-upload";
 import axios from "axios";
-import JoditEditor from "jodit-react";
+// import JoditEditor from "jodit-react";
+import dynamic from "next/dynamic";
+
+const JoditEditor = dynamic(() => import("jodit-react"), {
+  ssr: false,
+});
+
 
 const formSchema = z.object({
   title: z.string().min(5).max(100),
