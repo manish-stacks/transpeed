@@ -1,11 +1,11 @@
 import connectDB from "@/lib/mongodb";
-import Page from "@/models/Page";
+import PageModel from "@/model/PageModel";
 import { NextResponse } from "next/server";
 
 export async function GET(request, { params }) {
   try {
     await connectDB();
-    const page = await Page.findById(params.id);
+    const page = await PageModel.findById(params.id);
     
     if (!page) {
       return NextResponse.json(
@@ -35,7 +35,7 @@ export async function PUT(request, { params }) {
       );
     }
     
-    const page = await Page.findByIdAndUpdate(
+    const page = await PageModel.findByIdAndUpdate(
       params.id,
       body,
       { new: true, runValidators: true }
@@ -60,7 +60,7 @@ export async function PUT(request, { params }) {
 export async function DELETE(request, { params }) {
   try {
     await connectDB();
-    const page = await Page.findByIdAndDelete(params.id);
+    const page = await PageModel.findByIdAndDelete(params.id);
     
     if (!page) {
       return NextResponse.json(

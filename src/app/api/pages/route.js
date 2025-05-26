@@ -1,11 +1,11 @@
 import connectDB from "@/lib/mongodb";
-import Page from "@/models/Page";
+import PageModel from "@/model/PageModel";
 import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
     await connectDB();
-    const pages = await Page.find().sort({ createdAt: -1 });
+    const pages = await PageModel.find().sort({ createdAt: -1 });
     
     return NextResponse.json(pages, { status: 200 });
   } catch (error) {
@@ -28,7 +28,7 @@ export async function POST(request) {
       );
     }
     
-    const page = await Page.create(body);
+    const page = await PageModel.create(body);
     return NextResponse.json(page, { status: 201 });
   } catch (error) {
     return NextResponse.json(
