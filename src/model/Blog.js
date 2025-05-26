@@ -1,6 +1,4 @@
-import { url } from "inspector";
 import mongoose from "mongoose";
-import slugify from "slugify";
 
 const blogSchema = new mongoose.Schema(
   {
