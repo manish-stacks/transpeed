@@ -1,18 +1,31 @@
 import BlogCategory from "@/model/BlogCategory";
 import connectDB from "@/lib/mongodb";
+import Blog from "@/model/Blog";
 
 export async function GET() {
   try {
     await connectDB();
     const categories = await BlogCategory.find({}).sort({ createdAt: -1 });
-    if (!categories) {
+
+    const categoriesWithCount = await Promise.all(
+      categories.map(async (category) => {
+        const count = await Blog.find({ category: category._id }).countDocuments();
+        return {
+          ...category.toObject(),
+          blogCount: count,
+        };
+      })
+    );
+
+    
+    if (!categoriesWithCount.length) {
       return new Response(JSON.stringify({ error: "No categories found" }), {
         headers: { "Content-Type": "application/json" },
         status: 404,
       });
     }
 
-    return new Response(JSON.stringify(categories), {
+    return new Response(JSON.stringify(categoriesWithCount), {
       headers: { "Content-Type": "application/json" },
       status: 200,
     });

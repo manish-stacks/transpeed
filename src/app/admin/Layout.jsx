@@ -42,7 +42,14 @@ export default function Layout({ children }) {
   }, []);
 
   const logout = async () => {
-    console.log("logout");
+    localStorage.clear();
+    sessionStorage.clear();
+    document.cookie.split(";").forEach((c) => {
+      document.cookie = c
+        .replace(/^ +/, "")
+        .replace(/=.*/, "=;expires=" + new Date(0).toUTCString() + ";path=/");
+    });
+    router.push("/");
   };
   return (
     <div className="h-screen flex overflow-hidden bg-gray-100">

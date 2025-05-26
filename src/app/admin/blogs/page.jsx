@@ -22,7 +22,7 @@ export default function BlogsPage() {
         // const data = await getBlogs();
         const response = await axios.get("/api/blogs");
         const data = response.data;
-        console.log('blogs', data);
+        // console.log('blogs', data);
         setBlogs(data);
       } catch (error) {
         toast.error("Failed to load blogs");
@@ -40,7 +40,8 @@ export default function BlogsPage() {
   };
 
   const confirmDelete = () => {
-    setBlogs((prev) => prev.filter((blog) => blog.id !== blogToDelete));
+    axios.delete(`/api/blogs/${blogToDelete}`);
+    setBlogs((prev) => prev.filter((blog) => blog._id !== blogToDelete));
     toast.success("Blog deleted successfully");
     setDeleteDialogOpen(false);
   };
@@ -76,8 +77,8 @@ export default function BlogsPage() {
                   <Image
                     width={40}
                     height={40}
-                    src={blog.image.url}
-                    alt={blog.title}
+                    src={blog?.image?.url}
+                    alt={blog?.title}
                     className="h-10 w-10 rounded object-cover"
                   />
                   <div>
@@ -86,7 +87,9 @@ export default function BlogsPage() {
                   </div>
                 </td>
                 <td className="px-4 py-3">{blog.category.name}</td>
-                <td className="px-4 py-3">{new Date(blog.createdAt).toDateString()}</td>
+                <td className="px-4 py-3">
+                  {new Date(blog.createdAt).toDateString()}
+                </td>
                 <td className="px-4 py-3">
                   <span
                     className={`px-2 py-1 rounded text-xs font-medium ${

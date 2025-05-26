@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { toast } from "sonner";
 import { ImageIcon, Trash, Upload } from "lucide-react";
 
 export default function ImageUpload({ value, onChange, disabled }) {
@@ -86,14 +85,14 @@ export default function ImageUpload({ value, onChange, disabled }) {
       </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <input
+        {/* <input
           type="text"
           placeholder="Enter image URL"
           value={preview ? "" : preview}
           onChange={handleUrlChange}
           disabled={disabled}
           className="w-full border px-3 py-2 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100"
-        />
+        /> */}
 
         <div className="flex items-center gap-2">
           <input

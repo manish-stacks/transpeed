@@ -4,14 +4,18 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import axios from "axios";
 import Link from "next/link";
+import { useParams } from "next/navigation";
 
 const BlogCategoryPage = () => {
+  const params = useParams();
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get("/api/blogs");
+        const response = await axios.get(
+          `/api/blogs?category=${params.category}`
+        );
         setBlogs(response.data);
         // console.log("Blogs loaded successfully:", response.data);
       } catch (error) {
@@ -26,8 +30,15 @@ const BlogCategoryPage = () => {
 
   const featuredArticle = blogs[0];
 
+  if (!blogs || blogs.length === 0) {
+    return <div className="flex items-center justify-center h-screen">No blogs found</div>;
+  }
   if (loading) {
-    return <div className="flex items-center justify-center h-screen">Loading...</div>;
+    return (
+      <div className="flex items-center justify-center h-screen">
+        Loading...
+      </div>
+    );
   }
 
   return (
@@ -75,7 +86,7 @@ const BlogCategoryPage = () => {
               </p> */}
 
               <Link
-                href={`/blog-detail/${featuredArticle.slug}`}
+                href={`/blog-detail/${featuredArticle?.slug}`}
                 className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors"
               >
                 Read More

@@ -34,13 +34,13 @@ const formSchema = z.object({
 });
 
 export default function BlogForm({ initialData }) {
+  initialData = { ...initialData, category: initialData?.category?._id };
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [categories, setCategories] = useState([]);
   const editor = useRef(null);
   const [content, setContent] = useState(initialData?.content || "");
 
-  
   useEffect(() => {
     const fetchCategories = async () => {
       try {
@@ -77,8 +77,18 @@ export default function BlogForm({ initialData }) {
     },
   });
 
+  useEffect(() => {
+    if (initialData?.category) {
+      form.setValue("category", initialData?.category);
+    }
+
+    if (initialData?.image) {
+      form.setValue("image", initialData?.image?.url);
+    }
+  }, []);
+
   const onSubmit = async (data) => {
-    data.event?.preventDefault(); 
+    data.event?.preventDefault();
     console.log("Form data before submission:", data);
     try {
       setLoading(true);
@@ -144,7 +154,6 @@ export default function BlogForm({ initialData }) {
     []
   );
 
-  // ✅ Handle content changes properly
   const handleContentChange = (newContent) => {
     setContent(newContent);
     form.setValue("content", newContent);

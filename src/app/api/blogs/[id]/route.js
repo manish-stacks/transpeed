@@ -8,6 +8,7 @@ export async function GET(request, { params }) {
   try {
     await connectDB();
     let blog = null;
+
     if (isValidObjectId(params.id)) {
       blog = await Blog.findById(params.id).populate({
         path: "category",
@@ -24,7 +25,23 @@ export async function GET(request, { params }) {
       return NextResponse.json({ error: "Blog not found" }, { status: 404 });
     }
 
-    return NextResponse.json(blog, { status: 200 });
+    const recentPosts = await Blog.find({ _id: { $ne: blog._id } })
+      .sort({ createdAt: -1 })
+      .limit(3)
+      .select("title slug image");
+
+    const previousBlog = await Blog.findOne({ _id: { $lt: blog._id } })
+      .sort({ _id: -1 })
+      .select("title slug");
+
+    const nextBlog = await Blog.findOne({ _id: { $gt: blog._id } })
+      .sort({ _id: 1 })
+      .select("title slug");
+
+    return NextResponse.json(
+      { blog, recentPosts, previousBlog, nextBlog },
+      { status: 200 }
+    );
   } catch (error) {
     console.error("Error fetching blog:", error);
     return NextResponse.json(
@@ -33,54 +50,60 @@ export async function GET(request, { params }) {
     );
   }
 }
-
 export async function PUT(request, { params }) {
   try {
     await connectDB();
-    const body = await request.json();
 
-    if (!body.title || !body.content || !body.category) {
+    const body = await request.json();
+    const { title, content, category, image, ...rest } = body;
+
+    console.log("Updating blog with body:", body);
+
+    if (!title || !content || !category) {
       return NextResponse.json(
-        { error: "Required fields missing" },
+        { error: "Title, content, and category are required." },
         { status: 400 }
       );
     }
 
-    let imageData = null;
+    // Fetch existing blog
+    const existingBlog = await Blog.findById(params.id);
+    if (!existingBlog) {
+      return NextResponse.json({ error: "Blog not found" }, { status: 404 });
+    }
 
-    // Handle image upload if present
-    if (body.image && body.image.startsWith("data:image/")) {
-      console.log("Uploading image to Cloudinary...");
+    let imageData = existingBlog.image;
+
+    // Upload only if a new base64 image is provided
+    if (image && image.startsWith("data:image/")) {
       try {
-        imageData = await uploadImage(body.image, "blog-images");
+        console.log("Uploading image to Cloudinary...");
+        imageData = await uploadImage(image, "blog-images");
         console.log("Image uploaded successfully:", imageData.url);
       } catch (uploadError) {
         console.error("Image upload failed:", uploadError);
         return NextResponse.json(
           { error: `Image upload failed: ${uploadError.message}` },
-          { status: 400 }
+          { status: 500 }
         );
       }
-    } else if (body.image && !body.image.startsWith("http")) {
-      imageData = {
-        url: body.image,
-      };
     }
 
-    const blog = await Blog.findByIdAndUpdate(
+    const updatedBlog = await Blog.findByIdAndUpdate(
       params.id,
-      { ...body, image: imageData },
       {
-        new: true,
-      }
+        title,
+        content,
+        category,
+        image: imageData,
+        ...rest,
+      },
+      { new: true }
     );
 
-    if (!blog) {
-      return NextResponse.json({ error: "Blog not found" }, { status: 404 });
-    }
-
-    return NextResponse.json(blog, { status: 200 });
+    return NextResponse.json(updatedBlog, { status: 200 });
   } catch (error) {
+    console.error("Error updating blog:", error);
     return NextResponse.json(
       { error: "Failed to update blog" },
       { status: 500 }

@@ -17,7 +17,8 @@ export default function EditBlogPage() {
       try {
         // const data = await getBlogById(params.blogId);
         const response = await axios.get(`/api/blogs/${params.blogId}`);
-        setBlog(response.data);
+        // console.log(response.data.blog);
+        setBlog(response.data.blog);
       } catch (error) {
         console.error("Failed to fetch blog:", error);
       } finally {
