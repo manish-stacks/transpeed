@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { use, useEffect, useState } from "react";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "sonner";
+import axios from "axios";
 
 const seoFormSchema = z.object({
   siteName: z.string().min(1, "Site name is required"),
@@ -12,32 +13,72 @@ const seoFormSchema = z.object({
   siteKeywords: z.string(),
   ogTitle: z.string(),
   ogDescription: z.string(),
-  ogImage: z.string().url().optional(),
+  ogImage: z.string().optional(),
   twitterHandle: z.string(),
-  googleAnalyticsId: z.string(),
+  headScript: z.string(),
+  bodyScript: z.string(),
+  footerScript: z.string(),
 });
 
 export default function SettingsPage() {
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    const fetchSettings = async () => {
+      try {
+        const response = await axios.get("/api/settings");
+        if (response.status === 200) {
+          // Update the form values after data is fetched
+          seoForm.reset({
+            siteName: response.data.siteName || "My Website",
+            siteDescription:
+              response.data.siteDescription || "This is my website",
+            siteKeywords: response.data.siteKeywords || "",
+            ogTitle: response.data.ogTitle || "My Website",
+            ogDescription: response.data.ogDescription || "This is my website",
+            ogImage: response.data.ogImage || "",
+            twitterHandle: response.data.twitterHandle || "",
+            headScript: response.data.headScript || "",
+            bodyScript: response.data.bodyScript || "",
+            footerScript: response.data.footerScript || "",
+          });
+        } else {
+          throw new Error("Failed to fetch settings");
+        }
+      } catch (error) {
+        console.error("Fetch error:", error);
+        toast.error("Failed to load settings");
+      }
+    };
+
+    fetchSettings();
+  }, []);
+
   const seoForm = useForm({
     resolver: zodResolver(seoFormSchema),
     defaultValues: {
-      siteName: "My Website",
-      siteDescription: "A comprehensive website for all your needs",
-      siteKeywords: "website, business, services",
+      siteName: "",
+      siteDescription: "",
+      siteKeywords: "",
       ogTitle: "",
       ogDescription: "",
       ogImage: "",
       twitterHandle: "",
-      googleAnalyticsId: "",
+      headScript: "",
+      bodyScript: "",
+      footerScript: "",
     },
   });
 
   const onSeoSubmit = async (data) => {
     try {
       setLoading(true);
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      const response = await axios.post("/api/settings", data);
+      if (response.status !== 200) {
+        throw new Error("Failed to update settings");
+      }
+
       toast.success("SEO settings updated successfully!");
     } catch {
       toast.error("Failed to update SEO settings");
@@ -136,7 +177,6 @@ export default function SettingsPage() {
               />
             </div>
 
-            
             <div>
               <label className="block text-sm font-medium">Head Script</label>
               <textarea

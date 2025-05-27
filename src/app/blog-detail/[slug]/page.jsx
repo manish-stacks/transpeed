@@ -1,15 +1,12 @@
-
+import axios from "axios";
 import BlogPostPageClient from "./BlogPostPageClient";
 
 export async function generateMetadata({ params }) {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_SITE_URL}/api/blogs/${params.slug}`,
-    {
-      cache: "no-store", 
-    }
+  const res = await axios.get(
+    `${process.env.NEXT_PUBLIC_SITE_URL}/api/blogs/${params.slug}`
   );
 
-  const data = await res.json();
+  const data = res.data;
   const post = data.blog;
 
   return {

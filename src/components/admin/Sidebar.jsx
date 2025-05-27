@@ -29,7 +29,7 @@ const navigation = [
   // { icon: Users, label: "Enquiries", path: "/admin/enquiries" },
   //   { icon: MessageSquare, label: "Schedule Timings", path: "/admin/schedule" },
   // { icon: Bell, label: "Media / Gallery", path: "/admin/media" },
-  // { icon: User, label: "My Profile", path: "/admin/profile" },
+  { icon: User, label: "My Profile", path: "/admin/profile" },
   { icon: Settings, label: "Settings", path: "/admin/settings" },
 ];
 

@@ -20,7 +20,7 @@ const Header = ({
   logout,
 }) => {
   const [showNotifications, setShowNotifications] = React.useState(false);
-
+console.log(userData)
   return (
     <>
       <header className="sticky top-0 z-30 h-16 bg-white shadow-sm flex items-center justify-between px-4 lg:px-8">
@@ -49,13 +49,13 @@ const Header = ({
               <Bell className="h-6 w-6 text-gray-600" />
               <span className="absolute top-0 right-0 h-2 w-2 bg-red-500 rounded-full"></span>
 
-              {showNotifications && (
+              {/*showNotifications && (
                 <div className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-lg py-2 z-50">
                   <div className="px-4 py-2 border-b border-gray-200">
                     <h3 className="text-sm font-semibold">Notifications</h3>
                   </div>
                   <div className="max-h-[300px] overflow-y-auto">
-                    {/* Sample notifications */}
+                   
                     <div className="px-4 py-3 hover:bg-gray-50 border-b border-gray-100">
                       <p className="text-sm text-gray-800">
                         New appointment request from John Doe
@@ -78,7 +78,7 @@ const Header = ({
                     </Link>
                   </div>
                 </div>
-              )}
+              )*/}
             </div>
           </div>
 
@@ -90,7 +90,7 @@ const Header = ({
               <Image
                 width={32}
                 height={32}
-                src={userData?.image || "/images/default-avatar.png"}
+                src={userData?.image || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm-TruksPXPI5imDL_kfzEfFiAZwg5AzHtWg&s"}
                 alt="profile"
                 className="h-8 w-8 rounded-full object-cover ring-2 ring-white"
               />
