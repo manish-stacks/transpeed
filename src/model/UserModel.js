@@ -10,6 +10,7 @@ const userSchema = new Schema(
       lowercase: true,
       trim: true,
     },
+    bio: String,
     password: String,
     role: String,
     isActive: Boolean,

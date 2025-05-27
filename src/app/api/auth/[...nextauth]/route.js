@@ -1,5 +1,8 @@
+import UserModel from "@/model/UserModel";
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
+import bcrypt from "bcryptjs";
+import connectDB from "@/lib/mongodb";
 
 export const authOptions = {
   providers: [
@@ -10,21 +13,22 @@ export const authOptions = {
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        const user = {
-          id: 1,
-          name: "Admin",
-          email: "admin@example.com",
-          role: "admin",
+        await connectDB();
+
+        const user = await UserModel.findOne({ email: credentials.email });
+        console.log("User found:", user);
+
+        if (!user) return null;
+
+        const isValid = await bcrypt.compare(credentials.password, user.password);
+        if (!isValid) return null;
+
+        return {
+          id: user._id,
+          name: user.name,
+          email: user.email,
+          role: user.role,
         };
-
-        if (
-          credentials.email === "admin@example.com" &&
-          credentials.password === "admin123"
-        ) {
-          return user;
-        }
-
-        return null;
       },
     }),
   ],
@@ -47,7 +51,6 @@ export const authOptions = {
     },
     async session({ session, token }) {
       session.user.role = token.role;
-      //   console.log('session', session);
       return session;
     },
     async redirect({ url, baseUrl }) {
