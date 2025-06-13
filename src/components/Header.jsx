@@ -29,7 +29,7 @@ const paymentmethods = [
     { name: 'USD', link: 'https://rzp.io/rzp/SZb6tF0a' },
     { name: 'EURO', link: 'https://rzp.io/rzp/WQHyemV3' },
     { name: 'INR', link: 'https://rzp.io/rzp/S8yW03of' },
-    { name: 'INR', link: 'https://rzp.io/rzp/S8yW03of' },
+    { name: 'AUD', link: 'https://rzp.io/rzp/wLf7JdZG' },
 ]
 
 export default function Header() {
