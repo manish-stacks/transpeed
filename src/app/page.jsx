@@ -6,12 +6,12 @@ import OtherServices from '@/components/home/OtherServices';
 import { ServicesCarouselDemo } from '@/components/home/ServicesCarouselDemo';
 import { WhyChooseHome } from '@/components/home/WhyChooseHome';
 import { AnimatedTestimonialsSection } from '@/components/home/AnimatedTestimonialsSection';
-import BlogSectionArea from '@/components/home/BlogSectionArea';
+import BlogSection from '@/components/home/BlogSectionArea';
 import CoreAdvantage from '@/components/home/CoreAdvantage';
-import StrategicFoundation from '@/components/home/StrategicFoundation';
-import ContactUs from '@/components/ContactUs'
+import StrategicFoundations from '@/components/home/StrategicFoundation';
+import ContactForm from '@/components/ContactUs';
 import GoogleMap from '@/components/GoogleMap';
-import MarqueeText from '@/components/Marquee';
+import ImageMarqueeCarousel from '@/components/Marquee';
 
 
 
@@ -22,13 +22,13 @@ export default function Page() {
       <ServicesCarouselDemo />
       <WhyChooseHome />
       <OtherServices />
-      <MarqueeText />
+      <ImageMarqueeCarousel />
       <CoreAdvantage />
       <CounterHome />
-      <StrategicFoundation />
+      <StrategicFoundations />
       <AnimatedTestimonialsSection />
-      <ContactUs />
-      <BlogSectionArea />
+      <ContactForm />
+      <BlogSection />
       <GoogleMap />
       
     </>

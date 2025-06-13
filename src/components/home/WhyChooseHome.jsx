@@ -49,13 +49,13 @@ const testimonials = [
   {
     quote:
       "Every business has unique logistics requirements. At Transpeed Cargo, we provide tailor-made solutions to suit your specific needs, whether it’s express shipping, bulk transportation, or specialized cargo handling.",
-    name: "Herman Melville",
+    name: "Leo Tolstoy",
     title: "Customized Solutions for Every Business",
   },
   {
     quote:
       "We believe in offering the best value for money. Our transparent pricing model ensures no hidden charges, helping businesses optimize costs without compromising service quality.",
-    name: "Herman Melville",
+    name: "Mark Twain",
     title: "Cost-Effective & Transparent Pricing",
   },
 ];
